@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import TopAppBar from "../components/TopAppBar/TopAppBar";
+import Hero from "../components/Hero/Hero";
 import getTheme from "../Theme";
 import { useEffect } from "react";
 
@@ -29,6 +30,7 @@ export default function LandingPage() {
     <ThemeProvider theme={Theme}>
       <CssBaseline />
       <TopAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <Hero mode={mode} />
       <Box sx={{ bgcolor: "background.default" }}>
         <Divider />
       </Box>
