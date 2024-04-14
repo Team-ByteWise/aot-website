@@ -112,7 +112,7 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
         { title: "Curriculum", link: "#" },
       ],
       Resources: [
-        { title: "Library", link: "#" },
+        { title: "Library", link: "library" },
         { title: "Moodle", link: "moodle" },
       ],
       Admission: [

@@ -11,6 +11,10 @@ const router = createBrowserRouter([
     path: "/moodle",
     element: <RedirectPage to="http://182.74.215.198/moodle/" />,
   },
+  {
+    path: "/library",
+    element: <RedirectPage to="https://aothopac.lsease.in/" />,
+  },
 ]);
 
 function App() {
