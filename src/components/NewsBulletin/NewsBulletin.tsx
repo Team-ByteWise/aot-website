@@ -1,17 +1,33 @@
 import Box from "@mui/material/Box";
+import { Link } from "@mui/material";
 import "./NewsBulletin.css";
 
-interface NewsBulletinProps {
-  newsItems: Array<string>;
+interface NewsItem {
+  title: string;
+  link: string;
 }
 
-const NewsBulletin = ({ newsItems }: NewsBulletinProps) => {
+interface NewsBulletinProps {
+  newsArray: NewsItem[];
+}
+
+const NewsBulletin = ({newsArray}: NewsBulletinProps) => {
   return (
     <Box className="news-bulletin">
       <Box className="news-bulletin-content">
-        {newsItems.concat(newsItems).map((item, index) => (
+        {newsArray.concat(newsArray).map((item, index) => (
           <Box key={index} component="span" className="news-item">
-            {item}
+            <Link
+              key={index}
+              textAlign="center"
+              sx={{
+                margin: { sm: "3px", md: "5px" },
+              }}
+              href={item.link}
+              underline="none"
+            >
+              {item.title}
+            </Link>
           </Box>
         ))}
       </Box>
