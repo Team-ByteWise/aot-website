@@ -140,12 +140,13 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
   const navigate = useNavigate();
   const parseNavBarItems = (
     navBarItems: Array<NavBarItemRecord> | NestedRecord,
+    suffix: string = "",
     depth: number = 1
   ) => {
     if (Array.isArray(navBarItems)) {
       return navBarItems.map((navBarItem) => (
         <MenuItem
-          key={navBarItem.title}
+          key={navBarItem.title + "-" + suffix}
           onClick={(event) => {
             event.preventDefault();
             navigate(navBarItem.link);
@@ -160,7 +161,7 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
     } else {
       return Object.entries(navBarItems).map(([title, children]) => (
         <NavBarItem
-          key={title}
+          key={title + "-" + suffix}
           title={title}
           popoverOrigin={
             depth == 1
@@ -172,7 +173,7 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
           }
           sx={{ py: "6px", px: "12px" }}
         >
-          {parseNavBarItems(children, depth + 1)}
+          {parseNavBarItems(children, suffix, depth + 1)}
         </NavBarItem>
       ));
     }
@@ -263,7 +264,7 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
                 }}
               >
                 <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                  {parseNavBarItems(navBarItems)}
+                  {parseNavBarItems(navBarItems, "md")}
                 </Box>
               </Box>
               <Box
@@ -345,7 +346,7 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
                         inputProps={{ "aria-label": "search" }}
                       />
                     </Search>
-                    {parseNavBarItems(navBarItems)}
+                    {parseNavBarItems(navBarItems, "sm")}
                   </Box>
                 </Drawer>
               </Box>

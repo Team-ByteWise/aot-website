@@ -24,6 +24,7 @@ function NavBarItem({
   popupIcon = <KeyboardArrowDownIcon fontSize="small" />,
   sx = {},
 }: NavBarItemProps) {
+  let i = 1;
   return (
     <>
       <BrowserView>
@@ -57,10 +58,8 @@ function NavBarItem({
         </ul>
       </BrowserView>
       <MobileView>
-        <Accordion sx={{my: "5px"}}>
-          <AccordionSummary
-            expandIcon={<KeyboardArrowDownIcon />}
-          >
+        <Accordion sx={{ my: "5px" }}>
+          <AccordionSummary expandIcon={<KeyboardArrowDownIcon />}>
             <Typography variant="body2" color="text.primary">
               {title}
             </Typography>
@@ -68,7 +67,8 @@ function NavBarItem({
           <AccordionDetails>
             <ul style={{ listStyle: "none", margin: "0", padding: "0" }}>
               {children.map((child) => (
-                <li key={title}>{child}</li>
+                // TODO : Fix li under li; Check if child is a li then directly put child else wrap child in li
+                <li key={title + "-" + i++}>{child}</li>
               ))}
             </ul>
           </AccordionDetails>
