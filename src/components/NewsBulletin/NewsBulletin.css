@@ -1,0 +1,25 @@
+.news-bulletin {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.news-bulletin-content {
+  display: inline-block;
+  animation: scroll-news 50s linear infinite;
+}
+
+@keyframes scroll-news {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.news-item {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 16px;
+}
