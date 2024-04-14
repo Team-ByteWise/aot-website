@@ -192,8 +192,7 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
         <Toolbar
           variant="regular"
           sx={(theme) => ({
-            paddingBottom: 2,
-            paddingTop: 2,
+            paddingBottom: { xs: 1, md: 2 },
             borderBottomLeftRadius: "25px",
             borderBottomRightRadius: "25px",
             bgcolor:
@@ -223,7 +222,7 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
           >
             <Box
               sx={{
-                display: "flex",
+                display: { xs: "none", md: "flex" },
                 flexDirection: "row",
                 alignItems: "center",
                 width: "100%",
@@ -231,7 +230,6 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
               }}
             >
               <AOTLogo mode={mode} style={logoStyle} />
-
               <Box>
                 <Typography variant="h6" color="text.primary">
                   Academy Of Technology
@@ -247,48 +245,34 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
             </Box>
             <Box
               sx={{
-                width: "100%",
-                display: "flex",
+                display: { xs: "flex", md: "none" },
+                paddingTop: "40px",
+                paddingBottom: "40px",
+                flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "space-between",
-                paddingLeft: "20px",
+                width: "100%",
+                height: "30px",
               }}
             >
-              <Box
-                sx={{
-                  flexGrow: 1,
-                  display: "flex",
-                  alignItems: "center",
-                  ml: "-18px",
-                  px: 0,
+              <AOTLogo
+                mode={mode}
+                style={{
+                  width: "auto",
+                  height: "25px",
+                  cursor: "pointer",
+                  marginRight: "10px",
                 }}
-              >
-                <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                  {parseNavBarItems(navBarItems, "md")}
-                </Box>
+              />
+              <Box>
+                <Typography variant="h6" color="text.primary">
+                  Academy Of Technology
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Translate your vision into reality
+                </Typography>
               </Box>
-              <Box
-                sx={{
-                  display: { xs: "none", md: "flex" },
-                  gap: 0.5,
-                  alignItems: "center",
-                }}
-              >
-                <Search>
-                  <SearchIconWrapper>
-                    <SearchIcon />
-                  </SearchIconWrapper>
-                  <SearchStyledInputBase
-                    placeholder="Search…"
-                    inputProps={{ "aria-label": "search" }}
-                  />
-                </Search>
-                <ToggleColorMode
-                  mode={mode}
-                  toggleColorMode={toggleColorMode}
-                />
-              </Box>
-              <Box sx={{ display: { sm: "", md: "none" } }}>
+              <Box>
                 <Button
                   variant="text"
                   color="primary"
@@ -349,6 +333,50 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
                     {parseNavBarItems(navBarItems, "sm")}
                   </Box>
                 </Drawer>
+              </Box>
+            </Box>
+            <Box
+              sx={{
+                width: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                paddingLeft: "20px",
+              }}
+            >
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: "flex",
+                  alignItems: "center",
+                  ml: "-18px",
+                  px: 0,
+                }}
+              >
+                <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                  {parseNavBarItems(navBarItems, "md")}
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  display: { xs: "none", md: "flex" },
+                  gap: 0.5,
+                  alignItems: "center",
+                }}
+              >
+                <Search>
+                  <SearchIconWrapper>
+                    <SearchIcon />
+                  </SearchIconWrapper>
+                  <SearchStyledInputBase
+                    placeholder="Search…"
+                    inputProps={{ "aria-label": "search" }}
+                  />
+                </Search>
+                <ToggleColorMode
+                  mode={mode}
+                  toggleColorMode={toggleColorMode}
+                />
               </Box>
             </Box>
           </Box>
