@@ -11,7 +11,7 @@ import { useEffect } from "react";
 
 export default function LandingPage() {
   let currentTheme = localStorage.getItem("theme");
-  if (!currentTheme) currentTheme = "dark";
+  if (!currentTheme) currentTheme = "light";
 
   const [mode, setMode] = React.useState<PaletteMode>(
     currentTheme as "dark" | "light"
