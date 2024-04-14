@@ -1,3 +1,10 @@
-# Academy Of Technoogy Website
+# Academy Of Technology Website
 
-This is a design of the new website for Academy Of Technology
+## How to run
+
+- Install Git and NodeJS and Add them to PATH
+- First clone the repo in your local machine using `git clone https://github.com/Team-ByteWise/aot-website`
+- `cd` into the repo directory using `cd aot-website`
+- Run `npm i` to install dependencies
+- Run `npm run dev` to launch the development server
+- Open the development server (generally `http://localhost:5173/`) in your browser
