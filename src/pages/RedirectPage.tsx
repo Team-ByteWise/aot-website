@@ -2,7 +2,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useEffect } from "react";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import getTheme from "./Theme";
+import getTheme from "../Theme";
 
 function RedirectPage({ to }: { to: string }) {
   let currentTheme = localStorage.getItem("theme");

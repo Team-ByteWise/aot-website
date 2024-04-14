@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import RedirectPage from "./RedirectPage";
+import RedirectPage from "./pages/RedirectPage";
 
 const router = createBrowserRouter([
   {
