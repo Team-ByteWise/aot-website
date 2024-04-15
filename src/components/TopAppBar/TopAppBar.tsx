@@ -101,7 +101,7 @@ function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
         ],
         PG: [
           { title: "MBA", link: "#" },
-          { title: "MBA", link: "#" },
+          { title: "MCA", link: "#" },
         ],
       },
       Programs: [
