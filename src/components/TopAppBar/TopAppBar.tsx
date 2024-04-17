@@ -20,6 +20,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ToggleColorMode from "../ToggleColorMode/ToggleColorMode";
 import NavBarItem from "../NavBarItem/NavBarItem";
 import AOTLogo from "../AOTLogo/AOTLogo";
+import {NestedRecord, NavBarItemRecord} from "../../data/NavBarTypes";
 
 const logoStyle: React.CSSProperties = {
   width: "auto",
@@ -70,73 +71,21 @@ const SearchStyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-type NavBarItemRecord = { title: string; link: string };
-type NestedRecord = { [k: string]: Array<NavBarItemRecord> | NestedRecord };
 
 interface TopAppBarProps {
   mode: PaletteMode;
   toggleColorMode: () => void;
+  navBarItems: NestedRecord;
 }
 
-function TopAppBar({ mode, toggleColorMode }: TopAppBarProps) {
+function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
 
-  // Links will be updated later
-  const navBarItems: NestedRecord = {
-    Academics: {
-      Departments: {
-        "B. Tech": [
-          { title: "CSBS", link: "#" },
-          { title: "CSE", link: "#" },
-          { title: "ECE", link: "#" },
-          { title: "EE", link: "#" },
-          { title: "EEE", link: "#" },
-          { title: "EIE", link: "#" },
-          { title: "IT", link: "#" },
-          { title: "ME", link: "#" },
-        ],
-        PG: [
-          { title: "MBA", link: "#" },
-          { title: "MCA", link: "#" },
-        ],
-      },
-      Programs: [
-        { title: "UG Programs", link: "#" },
-        { title: "PG Programs", link: "#" },
-        { title: "Program Structure", link: "#" },
-        { title: "Regulations", link: "#" },
-        { title: "Curriculum", link: "#" },
-      ],
-      Resources: [
-        { title: "Library", link: "library" },
-        { title: "Moodle", link: "moodle" },
-      ],
-      Admission: [
-        { title: "UG Admission", link: "#" },
-        { title: "PG Admission", link: "#" },
-      ],
-    },
-    Research: [
-      { title: "Current Research", link: "#" },
-      { title: "Past Research", link: "#" },
-      { title: "Research Facilities", link: "#" },
-    ],
-    Students: [
-      { title: "Life @ AOT", link: "#" },
-      { title: "Campus Facilities", link: "#" },
-      { title: "Career Services", link: "#" },
-      { title: "Events", link: "#" },
-    ],
-    Faculty: [
-      { title: "Faculty List", link: "#" },
-      { title: "Faculty Positions", link: "#" },
-      { title: "Career Benefits @ AOT", link: "#" },
-    ],
-  };
+
   const navigate = useNavigate();
   const parseNavBarItems = (
     navBarItems: Array<NavBarItemRecord> | NestedRecord,
