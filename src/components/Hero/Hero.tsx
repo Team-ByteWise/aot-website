@@ -150,6 +150,7 @@ export default function Hero({ mode }: HeroProps) {
                   textAlign="center"
                   variant="h4"
                   marginBottom={"20px"}
+                  sx={{fontSize: { xs: 25, sm: 40}}}
                 >
                   Announcements
                 </Typography>
@@ -191,6 +192,7 @@ export default function Hero({ mode }: HeroProps) {
                   textAlign="center"
                   variant="h4"
                   marginBottom={"20px"}
+                  sx={{fontSize: { xs: 25, sm: 40}}}
                 >
                   Events
                 </Typography>
