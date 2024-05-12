@@ -180,8 +180,8 @@ function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
             >
               <AOTLogo mode={mode} style={logoStyle} />
               <Box>
-                <Typography variant="h6" color="text.primary">
-                  Academy Of Technology
+                <Typography variant="h6" fontWeight={"bold"} color="text.primary">
+                  ACADEMY OF TECHNOLOGY
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Translate your vision into reality
