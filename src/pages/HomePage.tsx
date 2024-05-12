@@ -9,6 +9,7 @@ import Hero from "../components/Hero/Hero";
 import getTheme from "../Theme";
 import { useEffect } from "react";
 import { NestedRecord } from "../data/NavBarTypes";
+import Footer from "../components/Footer/Footer";
 
 export default function LandingPage() {
   let currentTheme = localStorage.getItem("theme");
@@ -87,6 +88,7 @@ export default function LandingPage() {
       <Box sx={{ bgcolor: "background.default" }}>
         <Divider />
       </Box>
+      <Footer />
     </ThemeProvider>
   );
 }
