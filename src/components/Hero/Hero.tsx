@@ -11,7 +11,7 @@ import newsArray from "../../assets/data/news.json";
 import announcementsArray from "../../assets/data/announcements.json";
 import eventsArray from "../../assets/data/events.json";
 import { Link } from "@mui/material";
-import Carousel, {SlideImage} from "../Carousel/Carousel";
+import Carousel, { SlideImage } from "../Carousel/Carousel";
 
 export default function Hero() {
   const gridStyle = (theme: Theme) => ({
@@ -98,15 +98,14 @@ export default function Hero() {
         <Container
           style={{
             marginTop: "50px",
+            minWidth: "97%",
           }}
           sx={gridStyle}
-          maxWidth="xl"
         >
           <NewsBulletin newsArray={newsArray} />
         </Container>
 
         <Container
-          maxWidth="xl"
           sx={{
             mt: { xs: 8, sm: 10 },
           }}
@@ -116,6 +115,7 @@ export default function Hero() {
             alignContent: "flex-start",
             alignItems: "left",
             justifyContent: "space-between",
+            minWidth: "100%",
           }}
         >
           <Grid
@@ -127,7 +127,7 @@ export default function Hero() {
           >
             <Grid
               item
-              width={{ xs: "100%", sm: "100%", md: "40%" }}
+              width={{ xs: "100%", sm: "100%", md: "30%" }}
               sx={gridStyle}
             >
               <Container
@@ -169,7 +169,7 @@ export default function Hero() {
 
             <Grid
               item
-              width={{ xs: "100%", sm: "100%", md: "40%" }}
+              width={{ xs: "100%", sm: "100%", md: "30%" }}
               sx={gridStyle}
             >
               <Container

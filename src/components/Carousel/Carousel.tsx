@@ -57,7 +57,7 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => (
 const Carousel = ({ slideImages, sx }: { slideImages: SlideImage[]; sx: CSSProperties }) => {
   const settings: Settings = {
     dots: true,
-    appendDots: (dots) => (
+    appendDots: (dots: React.ReactNode) => (
       <div
         style={{
           position: "absolute",
@@ -77,6 +77,7 @@ const Carousel = ({ slideImages, sx }: { slideImages: SlideImage[]; sx: CSSPrope
             padding: "0px",
             alignItems: "center",
             display: "flex",
+            color: "primary"
           }}
         >
           {dots}
