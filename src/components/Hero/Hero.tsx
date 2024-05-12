@@ -1,25 +1,19 @@
-import { Grid, PaletteMode, Theme, alpha } from "@mui/material";
+import { Grid, Theme, alpha } from "@mui/material";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import AOTLogo from "../AOTLogo/AOTLogo";
+import image1 from "../../assets/images/image_1.png";
+import image2 from "../../assets/images/image_2.png";
+import image3 from "../../assets/images/image_3.png";
+import image4 from "../../assets/images/image_4.png";
 import NewsBulletin from "../NewsBulletin/NewsBulletin";
 import newsArray from "../../assets/data/news.json";
 import announcementsArray from "../../assets/data/announcements.json";
 import eventsArray from "../../assets/data/events.json";
 import { Link } from "@mui/material";
+import Carousel from "../Carousel/Carousel";
 
-interface HeroProps {
-  mode: PaletteMode;
-}
-
-export default function Hero({ mode }: HeroProps) {
-  const logoStyle = {
-    width: "30vh",
-    height: "auto",
-  };
-
+export default function Hero() {
   const gridStyle = (theme: Theme) => ({
     alignSelf: "center",
     backgroundImage:
@@ -39,6 +33,33 @@ export default function Hero({ mode }: HeroProps) {
         : `0 0 24px 12px ${alpha("#033363", 0.2)}`,
   });
 
+  const slides = [
+    {
+      image: image1,
+      alt: "Image 1",
+      text: "“The Gates of Success in life Swings on the hinges of Education”",
+      buttonText: "Explore",
+    },
+    {
+      image: image2,
+      alt: "Image 2",
+      text: "“Engineering is the VISA to Innovation”",
+      buttonText: "Take Website Tour",
+    },
+    {
+      image: image3,
+      alt: "Image 3",
+      text: "“The harder the battle, the sweeter the victory”",
+      buttonText: "Meet or Faculty",
+    },
+    {
+      image: image4,
+      alt: "Image 4",
+      text: "“Education is the most powerful weapon which you can use to change the world.”",
+      buttonText: "Check out our Placement Records",
+    },
+  ];
+
   return (
     <Box
       id="hero"
@@ -53,8 +74,9 @@ export default function Hero({ mode }: HeroProps) {
       })}
     >
       <Container
-        maxWidth="xl"
         sx={{
+          minWidth: "100%",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -62,45 +84,12 @@ export default function Hero({ mode }: HeroProps) {
           pb: { xs: 8, sm: 12 },
         }}
       >
-        <Stack spacing={2} useFlexGap sx={{ width: { xs: "100%", sm: "70%" } }}>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <AOTLogo mode={mode} style={logoStyle} />
-          </Box>
-
-          <Typography
-            variant="h1"
-            sx={{
-              display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              alignSelf: "center",
-              textAlign: "center",
-              fontSize: "clamp(3.5rem, 10vw, 4rem)",
-            }}
-          >
-            Academy Of Technology
-          </Typography>
-          <Typography
-            textAlign="center"
-            color="text.secondary"
-            sx={{ alignSelf: "center", width: { sm: "100%", md: "80%" } }}
-          >
-            Translate your vision into reality
-          </Typography>
-          <Typography
-            textAlign="center"
-            color="text.secondary"
-            sx={{ alignSelf: "center", width: { sm: "100%", md: "80%" } }}
-          >
-            Approved by AICTE, Affiliated to MAKAUT, Accredited by NBA & Ranked
-            by NIRF
-          </Typography>
-        </Stack>
+        <Container sx={{ minWidth: "100%", width: "100%" }}>
+          <Carousel
+            slides={slides}
+            sx={{ height: "500px", borderRadius: "20px" }}
+          />
+        </Container>
 
         <Container
           style={{
@@ -150,7 +139,7 @@ export default function Hero({ mode }: HeroProps) {
                   textAlign="center"
                   variant="h4"
                   marginBottom={"20px"}
-                  sx={{fontSize: { xs: 25, sm: 40}}}
+                  sx={{ fontSize: { xs: 25, sm: 40 } }}
                 >
                   Announcements
                 </Typography>
@@ -192,7 +181,7 @@ export default function Hero({ mode }: HeroProps) {
                   textAlign="center"
                   variant="h4"
                   marginBottom={"20px"}
-                  sx={{fontSize: { xs: 25, sm: 40}}}
+                  sx={{ fontSize: { xs: 25, sm: 40 } }}
                 >
                   Events
                 </Typography>

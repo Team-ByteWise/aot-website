@@ -83,7 +83,7 @@ export default function LandingPage() {
     <ThemeProvider theme={Theme}>
       <CssBaseline />
       <TopAppBar mode={mode} toggleColorMode={toggleColorMode} navBarItems={navBarItems} />
-      <Hero mode={mode} />
+      <Hero />
       <Box sx={{ bgcolor: "background.default" }}>
         <Divider />
       </Box>
