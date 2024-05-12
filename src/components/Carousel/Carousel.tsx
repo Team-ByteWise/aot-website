@@ -5,12 +5,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { Typography, Button, styled } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { useNavigate } from "react-router-dom";
 
-interface Slide {
+export interface SlideImage {
   image: string;
   alt: string;
   text: string;
   buttonText: string;
+  link: string;
 }
 
 const ElevatedButton = styled(Button)({
@@ -52,7 +54,7 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => (
   </ElevatedButton>
 );
 
-const Carousel = ({ slides, sx }: { slides: Slide[]; sx: CSSProperties }) => {
+const Carousel = ({ slideImages, sx }: { slideImages: SlideImage[]; sx: CSSProperties }) => {
   const settings: Settings = {
     dots: true,
     appendDots: (dots) => (
@@ -106,12 +108,14 @@ const Carousel = ({ slides, sx }: { slides: Slide[]; sx: CSSProperties }) => {
     borderRadius: sx.borderRadius,
   };
 
+  const navigate = useNavigate();
+
   return (
     <div
       style={{ height: sx.height, position: "relative", overflow: "hidden" }}
     >
       <Slider {...settings}>
-        {slides.map((slide, index) => (
+        {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
               style={{
@@ -120,7 +124,7 @@ const Carousel = ({ slides, sx }: { slides: Slide[]; sx: CSSProperties }) => {
                 height: sx.height,
               }}
             >
-              <img src={slide.image} alt={slide.alt} style={imageProperties} />
+              <img src={slideImage.image} alt={slideImage.alt} style={imageProperties} />
               <div
                 style={{
                   position: "absolute",
@@ -155,7 +159,7 @@ const Carousel = ({ slides, sx }: { slides: Slide[]; sx: CSSProperties }) => {
               variant="h5"
               component="h2"
             >
-              {slide.text}
+              {slideImage.text}
             </Typography>
 
             <Button
@@ -163,8 +167,12 @@ const Carousel = ({ slides, sx }: { slides: Slide[]; sx: CSSProperties }) => {
               variant="contained"
               color="primary"
               sx={{ p: 3 }}
+              onClick={(event) => {
+                event.preventDefault();
+                navigate(slideImage.link);
+              }}
             >
-              {slide.buttonText}
+              {slideImage.buttonText}
             </Button>
           </div>
         ))}

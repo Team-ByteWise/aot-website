@@ -11,7 +11,7 @@ import newsArray from "../../assets/data/news.json";
 import announcementsArray from "../../assets/data/announcements.json";
 import eventsArray from "../../assets/data/events.json";
 import { Link } from "@mui/material";
-import Carousel from "../Carousel/Carousel";
+import Carousel, {SlideImage} from "../Carousel/Carousel";
 
 export default function Hero() {
   const gridStyle = (theme: Theme) => ({
@@ -33,30 +33,34 @@ export default function Hero() {
         : `0 0 24px 12px ${alpha("#033363", 0.2)}`,
   });
 
-  const slides = [
+  const slideImages: SlideImage[] = [
     {
       image: image1,
       alt: "Image 1",
       text: "“The Gates of Success in life Swings on the hinges of Education”",
       buttonText: "Explore",
+      link: "/",
     },
     {
       image: image2,
       alt: "Image 2",
       text: "“Engineering is the VISA to Innovation”",
       buttonText: "Take Website Tour",
+      link: "/about",
     },
     {
       image: image3,
       alt: "Image 3",
       text: "“The harder the battle, the sweeter the victory”",
-      buttonText: "Meet or Faculty",
+      buttonText: "Meet our Faculty",
+      link: "/faculty",
     },
     {
       image: image4,
       alt: "Image 4",
       text: "“Education is the most powerful weapon which you can use to change the world.”",
       buttonText: "Check out our Placement Records",
+      link: "/placement",
     },
   ];
 
@@ -86,7 +90,7 @@ export default function Hero() {
       >
         <Container sx={{ minWidth: "100%", width: "100%" }}>
           <Carousel
-            slides={slides}
+            slideImages={slideImages}
             sx={{ height: "500px", borderRadius: "20px" }}
           />
         </Container>
