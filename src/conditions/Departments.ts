@@ -1,0 +1,165 @@
+interface PlacementStatistics {
+  year: number;
+  percentage: number;
+  placedStudents: number;
+  totalOffers: number;
+}
+
+interface Department {
+  name: string;
+  tagLine: string;
+  about: string;
+  placementStatistics: PlacementStatistics;
+}
+
+const CSE: Department = {
+  name: "Computer Science and Engineering",
+  tagLine: "Where Ideas Meet Technology",
+  about:
+    "Step into the dynamic world of Computer Science Engineering at A.O.T, \
+    where innovation thrives and boundaries blur. Our department is a \
+    crucible of creativity, where students are not just learners but \
+    pioneers of tomorrow's digital landscape. Led by visionary \
+    educators, we empower minds to push the limits of what's possible, \
+    shaping the future of technology one line of code at a time.",
+  placementStatistics: {
+    year: 2023,
+    percentage: 212.31,
+    placedStudents: 130,
+    totalOffers: 276,
+  },
+};
+
+const CSBS: Department = {
+  name: "Computer Science and Business Systems",
+  tagLine: "Programming logic, business magic",
+  about:
+    "The Department of Computer Science and Business Systems at A.O.T \
+        offers a unique blend of technology and business education. Our \
+        students are equipped with the skills to navigate the digital \
+        landscape, combining technical expertise with business acumen to \
+        drive innovation and growth. With a focus on real-world applications \
+        and hands-on learning, our department prepares students to excel in \
+        a rapidly evolving global economy.",
+  placementStatistics: {
+    year: 2023,
+    percentage: 212.31,
+    placedStudents: 130,
+    totalOffers: 276,
+  },
+};
+
+const EE: Department = {
+  name: "Electrical Engineering",
+  tagLine: "Powering Progress, Illuminating Minds",
+  about:
+    "Dive into the realm of Electrical Engineering at AOT, where curiosity \
+    sparks brilliance. From circuits to systems, we illuminate the path \
+    towards sustainable energy solutions and technological breakthroughs. \
+    With a blend of theory and hands-on experience, our students harness \
+    the power to shape a brighter, smarter future.",
+  placementStatistics: {
+    year: 2023,
+    percentage: 212.31,
+    placedStudents: 130,
+    totalOffers: 276,
+  },
+};
+
+const ME: Department = {
+  name: "Mechanical Engineering",
+  tagLine: "Precision in Motion, Engineering Excellence",
+  about:
+    "Embark on a journey of innovation and creativity with Mechanical \
+        Engineering at A.O.T. Our department is a hub of hands-on learning, \
+        where students design, build, and test cutting-edge solutions to real-world \
+        challenges. With a focus on sustainability and efficiency, we empower \
+        minds to engineer a better tomorrow.",
+  placementStatistics: {
+    year: 2023,
+    percentage: 212.31,
+    placedStudents: 130,
+    totalOffers: 276,
+  },
+};
+
+const ECE: Department = {
+  name: "Electronics and Communication Engineering",
+  tagLine: "Connecting Beyond Borders, Innovating Tomorrow",
+  about:
+    "Explore the world of Electronics and Communication Engineering at A.O.T, \
+        where ideas take flight. Our department is a playground of innovation, \
+        where students design, build, and connect the technologies of tomorrow. \
+        From circuits to communication systems, we empower minds to bridge the gap \
+        between imagination and reality, shaping the future of connectivity.",
+  placementStatistics: {
+    year: 2023,
+    percentage: 212.31,
+    placedStudents: 130,
+    totalOffers: 276,
+  },
+};
+
+const EEE: Department = {
+  name: "Electrical and Electronics Engineering",
+  tagLine: "Empowering Innovation, Illuminating Futures",
+  about:
+    "Discover the dynamic field of Electrical and Electronics Engineering at A.O.T, \
+            where innovation sparks transformation. Our department is a melting pot of \
+            creativity, where students explore the frontiers of power and energy systems. \
+            With a focus on sustainability and efficiency, we empower minds to engineer \
+            solutions that power the future.",
+  placementStatistics: {
+    year: 2023,
+    percentage: 212.31,
+    placedStudents: 130,
+    totalOffers: 276,
+  },
+};
+
+const MCA: Department = {
+  name: "Master of Computer Applications",
+  tagLine: "Innovating the Future, Empowering Minds",
+  about:
+    "Embark on a journey of innovation and creativity with Mechanical \
+            Engineering at A.O.T. Our department is a hub of hands-on learning, \
+            where students design, build, and test cutting-edge solutions to real-world \
+            challenges. With a focus on sustainability and efficiency, we empower \
+            minds to engineer a better tomorrow.",
+  placementStatistics: {
+    year: 2023,
+    percentage: 212.31,
+    placedStudents: 130,
+    totalOffers: 276,
+  },
+};
+
+const MBA: Department = {
+  name: "Master of Business Administration",
+  tagLine: "Strategizing Success, Leading Change",
+  about:
+    "Unlock the power of business leadership with an MBA from A.O.T. Our \
+            program is designed to equip students with the skills to thrive in a \
+            rapidly evolving global marketplace. From strategic management to \
+            financial analysis, we empower minds to drive innovation and growth \
+            in the digital age.",
+  placementStatistics: {
+    year: 2023,
+    percentage: 212.31,
+    placedStudents: 130,
+    totalOffers: 276,
+  },
+};
+
+const Departments = {
+  CSE: CSE,
+  CSBS: CSBS,
+  EE: EE,
+  ME: ME,
+  ECE: ECE,
+  EEE: EEE,
+  MCA: MCA,
+  MBA: MBA,
+};
+
+export default Departments;
