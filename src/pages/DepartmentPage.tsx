@@ -15,7 +15,7 @@ import { NestedRecord } from "../data/NavBarTypes";
 import Footer from "../components/Footer/Footer";
 import image5 from "../assets/images/image_5.png";
 import { useNavigate, useParams } from "react-router-dom";
-import Departments from "../conditions/Departments";
+import departments from "../conditions/departments";
 import CustomCard from "../components/CustomCard/CustomCard";
 import person from "../assets/images/person.png";
 
@@ -92,9 +92,9 @@ export default function DepartmentPage() {
   const matchesSM = useMediaQuery(Theme.breakpoints.down("sm"));
   const matchesMD = useMediaQuery(Theme.breakpoints.down("md"));
   const { department } = useParams();
-  const dept = department as keyof typeof Departments;
+  const dept = department as keyof typeof departments;
 
-  if (department == undefined || !Departments[dept]) {
+  if (department == undefined || !departments[dept]) {
     navigate("/");
     return <div></div>;
   }
@@ -140,7 +140,7 @@ export default function DepartmentPage() {
               }}
             >
               Welcome to AOT, Department of{" "}
-              <span>{Departments[dept].name}</span>
+              <span>{departments[dept].name}</span>
             </Typography>
             <Typography
               textAlign={{ xs: "center", md: "center", lg: "left" }}
@@ -149,7 +149,7 @@ export default function DepartmentPage() {
               marginBottom={"20px"}
               sx={{ fontSize: 20 }}
             >
-              “{Departments[dept].tagLine}”
+              “{departments[dept].tagLine}”
             </Typography>
           </Stack>
         </Stack>
@@ -179,7 +179,7 @@ export default function DepartmentPage() {
               marginBottom={"20px"}
               sx={{ fontSize: { xs: 15, sm: 18, md: 20 } }}
             >
-              {Departments[dept].about}
+              {departments[dept].about}
             </Typography>
           </Stack>
           <img
@@ -220,7 +220,7 @@ export default function DepartmentPage() {
                 "& span": { color: "#1F278D" },
               }}
             >
-              {Departments[dept].placementStatistics.year}
+              {departments[dept].placementStatistics.year}
               {" Placement "}
               <span>Statistics</span>
             </Typography>
@@ -235,7 +235,7 @@ export default function DepartmentPage() {
                   "& span": { color: "#1F278D" },
                 }}
               >
-                <span>{Departments[dept].placementStatistics.percentage}%</span>{" "}
+                <span>{departments[dept].placementStatistics.percentage}%</span>{" "}
                 Overall Placement
               </Typography>
               <Typography
@@ -250,10 +250,10 @@ export default function DepartmentPage() {
               >
                 (
                 <span>
-                  {Departments[dept].placementStatistics.placedStudents}
+                  {departments[dept].placementStatistics.placedStudents}
                 </span>{" "}
                 Students got{" "}
-                <span>{Departments[dept].placementStatistics.totalOffers}</span>{" "}
+                <span>{departments[dept].placementStatistics.totalOffers}</span>{" "}
                 Placement Offers)
               </Typography>
             </Stack>
@@ -325,7 +325,7 @@ export default function DepartmentPage() {
                     "& span": { color: "#1F278D" },
                   }}
                 >
-                  “{Departments[dept].about}”
+                  “{departments[dept].about}”
                 </Typography>
               </Stack>
             </CustomCard>
