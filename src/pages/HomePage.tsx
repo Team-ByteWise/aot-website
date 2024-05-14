@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import { NestedRecord } from "../data/NavBarTypes";
 import Footer from "../components/Footer/Footer";
 
-export default function LandingPage() {
+export default function HomePage() {
   let currentTheme = localStorage.getItem("theme");
   if (!currentTheme) currentTheme = "light";
 
@@ -83,7 +83,11 @@ export default function LandingPage() {
   return (
     <ThemeProvider theme={Theme}>
       <CssBaseline />
-      <TopAppBar mode={mode} toggleColorMode={toggleColorMode} navBarItems={navBarItems} />
+      <TopAppBar
+        mode={mode}
+        toggleColorMode={toggleColorMode}
+        navBarItems={navBarItems}
+      />
       <Hero />
       <Box sx={{ bgcolor: "background.default" }}>
         <Divider />

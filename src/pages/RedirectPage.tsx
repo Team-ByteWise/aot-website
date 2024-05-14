@@ -13,7 +13,7 @@ function RedirectPage({ to }: { to: string }) {
   useEffect(() => {
     location.replace(to);
   }, [to]);
-  
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -27,7 +27,9 @@ function RedirectPage({ to }: { to: string }) {
             bgcolor: "background.default",
           }}
         >
-          <Typography variant="h1" sx={{typography: { xs: "h4", sm: "h1"}}}>Redirecting...</Typography>
+          <Typography variant="h1" sx={{ typography: { xs: "h4", sm: "h1" } }}>
+            Redirecting...
+          </Typography>
         </Box>
       </ThemeProvider>
     </>

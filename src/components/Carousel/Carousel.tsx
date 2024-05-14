@@ -54,7 +54,13 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => (
   </ElevatedButton>
 );
 
-const Carousel = ({ slideImages, sx }: { slideImages: SlideImage[]; sx: CSSProperties }) => {
+const Carousel = ({
+  slideImages,
+  sx,
+}: {
+  slideImages: SlideImage[];
+  sx: CSSProperties;
+}) => {
   const settings: Settings = {
     dots: true,
     appendDots: (dots: React.ReactNode) => (
@@ -77,7 +83,7 @@ const Carousel = ({ slideImages, sx }: { slideImages: SlideImage[]; sx: CSSPrope
             padding: "0px",
             alignItems: "center",
             display: "flex",
-            color: "primary"
+            color: "primary",
           }}
         >
           {dots}
@@ -125,7 +131,11 @@ const Carousel = ({ slideImages, sx }: { slideImages: SlideImage[]; sx: CSSPrope
                 height: sx.height,
               }}
             >
-              <img src={slideImage.image} alt={slideImage.alt} style={imageProperties} />
+              <img
+                src={slideImage.image}
+                alt={slideImage.alt}
+                style={imageProperties}
+              />
               <div
                 style={{
                   position: "absolute",
@@ -155,8 +165,8 @@ const Carousel = ({ slideImages, sx }: { slideImages: SlideImage[]; sx: CSSPrope
               style={{ ...floatingStyle, top: "20%" }}
               color={"primary.dark"}
               fontWeight={"bold"}
-              fontSize={{sm: "1.5rem", md: "2rem", lg: "2rem"}}
-              maxWidth={{sm: "50%", md: "40%", lg: "30%"}}
+              fontSize={{ sm: "1.5rem", md: "2rem", lg: "2rem" }}
+              maxWidth={{ sm: "50%", md: "40%", lg: "30%" }}
               variant="h5"
               component="h2"
             >

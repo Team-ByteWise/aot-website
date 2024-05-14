@@ -139,7 +139,10 @@ export default function Footer({ mode }: { mode: PaletteMode }) {
               spacing={2}
               direction={"column"}
             >
-              <Typography variant="h6" color={mode === "light" ? "#262A63" : "#C9EBFF"}>
+              <Typography
+                variant="h6"
+                color={mode === "light" ? "#262A63" : "#C9EBFF"}
+              >
                 Quick Links
               </Typography>
               <Stack
@@ -192,7 +195,10 @@ export default function Footer({ mode }: { mode: PaletteMode }) {
               spacing={2}
               direction={"column"}
             >
-              <Typography variant="h6" color={mode === "light" ? "#262A63" : "#C9EBFF"}>
+              <Typography
+                variant="h6"
+                color={mode === "light" ? "#262A63" : "#C9EBFF"}
+              >
                 Navigate
               </Typography>
               <iframe
