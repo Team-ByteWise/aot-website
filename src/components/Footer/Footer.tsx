@@ -1,12 +1,15 @@
-import { Container, Typography, Grid, Stack, Box } from "@mui/material";
-import AOTLogo from "../AOTLogo/AOTLogo";
 import {
-  HomeOutlined,
-  MailOutline,
-  PhoneOutlined,
-} from "@mui/icons-material";
+  Container,
+  Typography,
+  Grid,
+  Stack,
+  Box,
+  PaletteMode,
+} from "@mui/material";
+import AOTLogo from "../AOTLogo/AOTLogo";
+import { HomeOutlined, MailOutline, PhoneOutlined } from "@mui/icons-material";
 
-export default function Footer() {
+export default function Footer({ mode }: { mode: PaletteMode }) {
   const divStyle = {
     display: "flex",
     flexDirection: "row",
@@ -19,7 +22,7 @@ export default function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: "#C9EBFF",
+        backgroundColor: mode === "light" ? "#C9EBFF" : "#070812",
       }}
     >
       <Container
@@ -30,7 +33,6 @@ export default function Footer() {
         <Grid
           style={{ display: "flex" }}
           container
-          gap={5}
           justifyContent="space-between"
           alignContent={"flex-start"}
           alignItems={"flex-start"}
@@ -62,21 +64,24 @@ export default function Footer() {
                   display: "flex",
                   flexDirection: "row",
                   width: "100%",
-                  height: "100px",
                 }}
               >
                 <AOTLogo
-                  mode={"light"}
+                  mode={mode}
                   style={{
                     width: "auto",
-                    height: "70px",
+                    height: "8vh",
                     padding: "0.7rem",
                     cursor: "pointer",
-                    marginRight: "20px",
+                    marginRight: "1em",
                   }}
                 />
                 <Box>
-                  <Typography variant="h6" fontWeight={"bold"} color="#262A63">
+                  <Typography
+                    variant="h6"
+                    fontWeight={"bold"}
+                    color={mode === "light" ? "#262A63" : "#C9EBFF"}
+                  >
                     ACADEMY OF TECHNOLOGY
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -117,7 +122,7 @@ export default function Footer() {
             item
             width={{ xs: "100%", sm: "100%", md: "30%" }}
             sx={{
-              display: "flex",
+              display: { xs: "none", sm: "none", md: "flex" },
               flexDirection: "column",
               alignContent: "center",
               alignItems: "center",
@@ -134,7 +139,7 @@ export default function Footer() {
               spacing={2}
               direction={"column"}
             >
-              <Typography variant="h6" color="#262A63">
+              <Typography variant="h6" color={mode === "light" ? "#262A63" : "#C9EBFF"}>
                 Quick Links
               </Typography>
               <Stack
@@ -187,16 +192,14 @@ export default function Footer() {
               spacing={2}
               direction={"column"}
             >
-              <Typography variant="h6" color="#262A63">
+              <Typography variant="h6" color={mode === "light" ? "#262A63" : "#C9EBFF"}>
                 Navigate
               </Typography>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.892761770176!2d88.37518185226898!3d22.954176193894902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8930eeb863655%3A0xb3a6adf26d41d0b5!2sAcademy%20of%20Technology!5e0!3m2!1sen!2sin!4v1715502116178!5m2!1sen!2sin"
                 style={{
-                    border: "0",
-                    borderRadius: "20px",
-                    height: "200px",
-                    width: "400px",
+                  border: "0",
+                  borderRadius: "20px",
                 }}
                 loading="lazy"
               ></iframe>
