@@ -32,18 +32,18 @@ export default function HomePage() {
     Academics: {
       Departments: {
         "B. Tech": [
-          { title: "CSBS", link: "#" },
-          { title: "CSE", link: "#" },
-          { title: "ECE", link: "#" },
-          { title: "EE", link: "#" },
-          { title: "EEE", link: "#" },
+          { title: "CSBS", link: "/department/CSBS" },
+          { title: "CSE", link: "/department/CSE" },
+          { title: "ECE", link: "/department/ECE" },
+          { title: "EE", link: "/department/EE" },
+          { title: "EEE", link: "/department/EEE" },
           { title: "EIE", link: "#" },
           { title: "IT", link: "#" },
-          { title: "ME", link: "#" },
+          { title: "ME", link: "/department/ME" },
         ],
         PG: [
-          { title: "MBA", link: "#" },
-          { title: "MCA", link: "#" },
+          { title: "MBA", link: "/department/MBA" },
+          { title: "MCA", link: "/department/MCA" },
         ],
       },
       Programs: [
