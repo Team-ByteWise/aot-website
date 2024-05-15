@@ -5,6 +5,7 @@ import {
   Stack,
   Box,
   PaletteMode,
+  Link,
 } from "@mui/material";
 import AOTLogo from "../AOTLogo/AOTLogo";
 import { HomeOutlined, MailOutline, PhoneOutlined } from "@mui/icons-material";
@@ -105,14 +106,17 @@ export default function Footer({ mode }: { mode: PaletteMode }) {
               <Box sx={divStyle}>
                 <MailOutline sx={{ color: "text.primary" }} />
                 <Typography variant="body2" color="text.primary">
-                  academy@aot.edu.in
+                  <Link href="mailto:academy@aot.edu.in">
+                    academy@aot.edu.in
+                  </Link>
                 </Typography>
               </Box>
 
               <Box sx={divStyle}>
                 <PhoneOutlined sx={{ color: "text.primary" }} />
                 <Typography variant="body2" color="text.primary">
-                  +91-9830196317/+91-9073360791
+                  <Link href="tel:+919830196317">+91-9830196317</Link> /{" "}
+                  <Link href="tel:+919073360791">+91-9073360791</Link>
                 </Typography>
               </Box>
             </Stack>
