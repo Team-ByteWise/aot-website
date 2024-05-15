@@ -14,7 +14,7 @@ import { useEffect } from "react";
 import Footer from "../components/Footer/Footer";
 import image5 from "../assets/images/image_5.png";
 import { useNavigate, useParams } from "react-router-dom";
-import departments from "../conditions/departments";
+import departments from "../data/Departments";
 import CustomCard from "../components/CustomCard/CustomCard";
 import person from "../assets/images/person.png";
 import NavBarItems from "../data/NavBarItems";
