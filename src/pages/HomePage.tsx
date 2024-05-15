@@ -54,8 +54,8 @@ export default function HomePage() {
         { title: "Curriculum", link: "#" },
       ],
       Resources: [
-        { title: "Library", link: "library" },
-        { title: "Moodle", link: "moodle" },
+        { title: "Library", link: "/library" },
+        { title: "Moodle", link: "/moodle" },
       ],
       Admission: [
         { title: "UG Admission", link: "#" },
