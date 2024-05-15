@@ -4,6 +4,7 @@ import RedirectPage from "./pages/RedirectPage";
 import DepartmentPage from "./pages/DepartmentPage";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import FacultyListPage from "./pages/FacultyListPage";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/department/:department",
     element: <DepartmentPage />,
+  },
+  {
+    path: "/faculty/list",
+    element: <FacultyListPage />,
   },
   {
     path: "/moodle",
