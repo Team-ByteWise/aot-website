@@ -6,11 +6,13 @@ import { PaletteMode } from "@mui/material";
 interface AOTLogoProps {
   mode: PaletteMode;
   style: CSSProperties;
+  onClick?: () => void;
 }
 
-function AOTLogo({ mode, style }: AOTLogoProps) {
+function AOTLogo({ mode, style, onClick }: AOTLogoProps) {
   return (
     <img
+      onClick={onClick}
       src={mode === "light" ? aot_blue : aot_white}
       style={{ ...style }}
       alt="Academy Of Technology Logo"

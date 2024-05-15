@@ -176,7 +176,11 @@ function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
                 height: "100px",
               }}
             >
-              <AOTLogo mode={mode} style={logoStyle} />
+              <AOTLogo
+                mode={mode}
+                style={logoStyle}
+                onClick={() => navigate("/")}
+              />
               <Box>
                 <Typography
                   variant="h6"
