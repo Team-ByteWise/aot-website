@@ -8,8 +8,8 @@ import TopAppBar from "../components/TopAppBar/TopAppBar";
 import Hero from "../components/Hero/Hero";
 import getTheme from "../Theme";
 import { useEffect } from "react";
-import { NestedRecord } from "../data/NavBarTypes";
 import Footer from "../components/Footer/Footer";
+import NavBarItems from "../data/NavBarItems";
 
 export default function HomePage() {
   let currentTheme = localStorage.getItem("theme");
@@ -28,65 +28,13 @@ export default function HomePage() {
     localStorage.setItem("theme", mode);
   }, [mode]);
 
-  const navBarItems: NestedRecord = {
-    Academics: {
-      Departments: {
-        "B. Tech": [
-          { title: "CSBS", link: "/department/CSBS" },
-          { title: "CSE", link: "/department/CSE" },
-          { title: "ECE", link: "/department/ECE" },
-          { title: "EE", link: "/department/EE" },
-          { title: "EEE", link: "/department/EEE" },
-          { title: "EIE", link: "#" },
-          { title: "IT", link: "#" },
-          { title: "ME", link: "/department/ME" },
-        ],
-        PG: [
-          { title: "MBA", link: "/department/MBA" },
-          { title: "MCA", link: "/department/MCA" },
-        ],
-      },
-      Programs: [
-        { title: "UG Programs", link: "#" },
-        { title: "PG Programs", link: "#" },
-        { title: "Program Structure", link: "#" },
-        { title: "Regulations", link: "#" },
-        { title: "Curriculum", link: "#" },
-      ],
-      Resources: [
-        { title: "Library", link: "/library" },
-        { title: "Moodle", link: "/moodle" },
-      ],
-      Admission: [
-        { title: "UG Admission", link: "#" },
-        { title: "PG Admission", link: "#" },
-      ],
-    },
-    Research: [
-      { title: "Current Research", link: "#" },
-      { title: "Past Research", link: "#" },
-      { title: "Research Facilities", link: "#" },
-    ],
-    Students: [
-      { title: "Life @ AOT", link: "#" },
-      { title: "Campus Facilities", link: "#" },
-      { title: "Career Services", link: "#" },
-      { title: "Events", link: "#" },
-    ],
-    Faculty: [
-      { title: "Faculty List", link: "#" },
-      { title: "Faculty Positions", link: "#" },
-      { title: "Career Benefits @ AOT", link: "#" },
-    ],
-  };
-
   return (
     <ThemeProvider theme={Theme}>
       <CssBaseline />
       <TopAppBar
         mode={mode}
         toggleColorMode={toggleColorMode}
-        navBarItems={navBarItems}
+        navBarItems={NavBarItems}
       />
       <Hero />
       <Box sx={{ bgcolor: "background.default" }}>
