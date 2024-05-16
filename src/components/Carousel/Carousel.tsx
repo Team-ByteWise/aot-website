@@ -2,7 +2,7 @@ import React, { CSSProperties } from "react";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Typography, Button, styled } from "@mui/material";
+import { Typography, Button, styled, useMediaQuery, Theme } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useNavigate } from "react-router-dom";
@@ -61,6 +61,11 @@ const Carousel = ({
   slideImages: SlideImage[];
   sx: CSSProperties;
 }) => {
+  const isXs = useMediaQuery((theme: Theme) => theme.breakpoints.down("xs"));
+  const isSm = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
+  const isMd = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isLg = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
+  
   const settings: Settings = {
     dots: true,
     appendDots: (dots: React.ReactNode) => (
@@ -71,7 +76,7 @@ const Carousel = ({
           bottom: "5%",
           backgroundColor: "rgba(255, 255, 255, 0.4)",
           borderRadius: "10px",
-          padding: "10px",
+          padding: isXs ? "2px" : isSm ? "4px" : "10px",
           width: "max-content",
           left: "50%",
           transform: "translateX(-50%)",
@@ -165,7 +170,7 @@ const Carousel = ({
               style={{ ...floatingStyle, top: "20%" }}
               color={"primary.dark"}
               fontWeight={"bold"}
-              fontSize={{ sm: "1.5rem", md: "2rem", lg: "2rem" }}
+              fontSize={{ xs: "0.8rem", sm: "1.0rem", md: "2rem", lg: "2rem" }}
               maxWidth={{ sm: "50%", md: "40%", lg: "30%" }}
               variant="h5"
               component="h2"
@@ -177,7 +182,15 @@ const Carousel = ({
               style={{ ...floatingStyle, bottom: "30%" }}
               variant="contained"
               color="primary"
-              sx={{ p: 3 }}
+              sx={{
+                p: { xs: 1, sm: 1, md: 1, lg: 3 },
+                fontSize: {
+                  xs: "0.8rem",
+                  sm: "1.0rem",
+                  md: "1.5rem",
+                  lg: "1.5rem",
+                },
+              }}
               onClick={(event) => {
                 event.preventDefault();
                 navigate(slideImage.link);

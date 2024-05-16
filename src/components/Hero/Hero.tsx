@@ -1,4 +1,4 @@
-import { Grid, Theme, alpha } from "@mui/material";
+import { Grid, Theme, alpha, useMediaQuery } from "@mui/material";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -64,6 +64,10 @@ export default function Hero() {
     },
   ];
 
+  const isXs = useMediaQuery((theme: Theme) => theme.breakpoints.down("xs"));
+  const isSm = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
+  const isMd = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+
   return (
     <Box
       id="hero"
@@ -84,14 +88,17 @@ export default function Hero() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          pt: { xs: 25, sm: 25 },
+          pt: { xs: 15, sm: 25 },
           pb: { xs: 8, sm: 12 },
         }}
       >
         <Container sx={{ minWidth: "100%", width: "100%" }}>
           <Carousel
             slideImages={slideImages}
-            sx={{ height: "500px", borderRadius: "20px" }}
+            sx={{
+              height: isXs ? "100px" : isSm ? "200px" : isMd ? "300px" : "400px",
+              borderRadius: "20px",
+            }}
           />
         </Container>
 
@@ -127,7 +134,7 @@ export default function Hero() {
           >
             <Grid
               item
-              width={{ xs: "100%", sm: "100%", md: "30%" }}
+              width={{ xs: "100%", sm: "100%", md: "45%" }}
               sx={gridStyle}
             >
               <Container
@@ -169,7 +176,7 @@ export default function Hero() {
 
             <Grid
               item
-              width={{ xs: "100%", sm: "100%", md: "30%" }}
+              width={{ xs: "100%", sm: "100%", md: "45%" }}
               sx={gridStyle}
             >
               <Container

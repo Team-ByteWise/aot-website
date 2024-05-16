@@ -87,7 +87,7 @@ export default function DepartmentPage() {
                 "& span": { color: "#1F278D" },
               }}
             >
-              Welcome to AOT, Department of{" "}
+              Welcome to AOT, Department of{"\n"}
               <span>{departments[dept].name}</span>
             </Typography>
             <Typography

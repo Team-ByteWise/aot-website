@@ -160,19 +160,19 @@ export default function Footer({ mode }: { mode: PaletteMode }) {
                 direction={"column"}
               >
                 <Typography variant="body2" color="text.primary">
-                  Academics
+                  <Link href="/department/CSE">CSE Department</Link>
                 </Typography>
                 <Typography variant="body2" color="text.primary">
-                  Admissions
+                  <Link href="/department/CSBS">CSBS Department</Link>
                 </Typography>
                 <Typography variant="body2" color="text.primary">
-                  Research
+                  <Link href="/moodle">Moodle Portal</Link>
                 </Typography>
                 <Typography variant="body2" color="text.primary">
-                  Students
+                  <Link href="/library">Digital Library</Link>
                 </Typography>
                 <Typography variant="body2" color="text.primary">
-                  Faculty
+                  <Link href="/faculty/list">Faculty List</Link>
                 </Typography>
               </Stack>
             </Stack>
@@ -224,7 +224,12 @@ export default function Footer({ mode }: { mode: PaletteMode }) {
             "linear-gradient(to bottom, rgba(28, 68, 128, 1), rgba(26, 22, 22, 1))",
         }}
       >
-        <Typography variant="body2" color="white" align="center">
+        <Typography
+          variant="body2"
+          color="white"
+          align="center"
+          sx={{ fontSize: { xs: 11, md: 15 } }}
+        >
           © 2024 Academy of Technology, All Rights Reserved.
         </Typography>
       </Box>
