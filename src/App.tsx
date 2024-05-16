@@ -1,11 +1,23 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RedirectPage from "./pages/RedirectPage";
+import DepartmentPage from "./pages/DepartmentPage";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import FacultyListPage from "./pages/FacultyListPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+  },
+  {
+    path: "/department/:department",
+    element: <DepartmentPage />,
+  },
+  {
+    path: "/faculty/list",
+    element: <FacultyListPage />,
   },
   {
     path: "/moodle",
@@ -21,6 +33,8 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }

@@ -144,7 +144,11 @@ const getDesignTokens = (mode: PaletteMode) => ({
       primary: gray[800],
       secondary: gray[600],
       semiSecondary: gray[400],
-      ...(mode === "dark" && { primary: "#fff", secondary: gray[400], semiSecondary: gray[500] }),
+      ...(mode === "dark" && {
+        primary: "#fff",
+        secondary: gray[400],
+        semiSecondary: gray[500],
+      }),
     },
     action: {
       selected: `${alpha(brand[200], 0.2)}`,

@@ -20,7 +20,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ToggleColorMode from "../ToggleColorMode/ToggleColorMode";
 import NavBarItem from "../NavBarItem/NavBarItem";
 import AOTLogo from "../AOTLogo/AOTLogo";
-import {NestedRecord, NavBarItemRecord} from "../../data/NavBarTypes";
+import { NestedRecord, NavBarItemRecord } from "../../data/NavBarTypes";
 
 const logoStyle: React.CSSProperties = {
   width: "auto",
@@ -71,7 +71,6 @@ const SearchStyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-
 interface TopAppBarProps {
   mode: PaletteMode;
   toggleColorMode: () => void;
@@ -84,7 +83,6 @@ function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
-
 
   const navigate = useNavigate();
   const parseNavBarItems = (
@@ -178,10 +176,18 @@ function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
                 height: "100px",
               }}
             >
-              <AOTLogo mode={mode} style={logoStyle} />
+              <AOTLogo
+                mode={mode}
+                style={logoStyle}
+                onClick={() => navigate("/")}
+              />
               <Box>
-                <Typography variant="h6" color="text.primary">
-                  Academy Of Technology
+                <Typography
+                  variant="h6"
+                  fontWeight={"bold"}
+                  color="text.primary"
+                >
+                  ACADEMY OF TECHNOLOGY
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Translate your vision into reality
