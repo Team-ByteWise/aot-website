@@ -9,8 +9,6 @@ const NavBarItems: NestedRecord = {
         { title: "ECE", link: "/department/ECE" },
         { title: "EE", link: "/department/EE" },
         { title: "EEE", link: "/department/EEE" },
-        { title: "EIE", link: "#" },
-        { title: "IT", link: "#" },
         { title: "ME", link: "/department/ME" },
       ],
       PG: [
