@@ -1,4 +1,5 @@
 import Departments from "../assets/data/departments.json";
+import { Event } from "./Event";
 import { Faculty } from "./Faculty";
 
 interface PlacementStatistics {
@@ -19,7 +20,7 @@ export interface Department {
   about: string;
   placementStatistics: PlacementStatistics;
   facultyInfo: FacultyInfo;
-  events?: Event[];
+  events: Event[];
 }
 
 export default Departments as { [key: string]: Department };

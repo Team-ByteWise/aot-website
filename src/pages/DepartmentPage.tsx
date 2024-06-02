@@ -121,7 +121,9 @@ export default function DepartmentPage() {
           {selectedButton === "Faculty" && (
             <DepartmentFaculty department={departments[dept]} />
           )}
-          {selectedButton === "Events" && <DepartmentEvent />}
+          {selectedButton === "Events" && (
+            <DepartmentEvent department={departments[dept]} />
+          )}
         </Box>
       </Container>
 

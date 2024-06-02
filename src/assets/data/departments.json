@@ -31,7 +31,27 @@
           "Experience": "23 yrs 9 mts"
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "name": "CodeFest",
+        "date": "15th - 17th March 2023",
+        "description": "CodeFest is an annual coding competition that brings together the brightest minds in the field of computer science. Participants compete in a series of challenges designed to test their coding skills, problem-solving abilities, and creativity. The event is a platform for students to showcase their talent, learn from industry experts, and network with peers from around the world.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random"
+      }
+    ]
   },
   "CSBS": {
     "name": "Computer Science and Business Systems",
@@ -65,7 +85,27 @@
           "Experience": "23 yrs 9 mts"
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "name": "CodeFest",
+        "date": "15th - 17th March 2023",
+        "description": "CodeFest is an annual coding competition that brings together the brightest minds in the field of computer science. Participants compete in a series of challenges designed to test their coding skills, problem-solving abilities, and creativity. The event is a platform for students to showcase their talent, learn from industry experts, and network with peers from around the world.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random"
+      }
+    ]
   },
   "EE": {
     "name": "Electrical Engineering",
@@ -99,7 +139,27 @@
           "Experience": "23 yrs 9 mts"
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "name": "CodeFest",
+        "date": "15th - 17th March 2023",
+        "description": "CodeFest is an annual coding competition that brings together the brightest minds in the field of computer science. Participants compete in a series of challenges designed to test their coding skills, problem-solving abilities, and creativity. The event is a platform for students to showcase their talent, learn from industry experts, and network with peers from around the world.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random"
+      }
+    ]
   },
   "ME": {
     "name": "Mechanical Engineering",
@@ -133,7 +193,27 @@
           "Experience": "23 yrs 9 mts"
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "name": "CodeFest",
+        "date": "15th - 17th March 2023",
+        "description": "CodeFest is an annual coding competition that brings together the brightest minds in the field of computer science. Participants compete in a series of challenges designed to test their coding skills, problem-solving abilities, and creativity. The event is a platform for students to showcase their talent, learn from industry experts, and network with peers from around the world.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random"
+      }
+    ]
   },
   "ECE": {
     "name": "Electronics and Communication Engineering",
@@ -167,7 +247,27 @@
           "Experience": "23 yrs 9 mts"
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "name": "CodeFest",
+        "date": "15th - 17th March 2023",
+        "description": "CodeFest is an annual coding competition that brings together the brightest minds in the field of computer science. Participants compete in a series of challenges designed to test their coding skills, problem-solving abilities, and creativity. The event is a platform for students to showcase their talent, learn from industry experts, and network with peers from around the world.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random"
+      }
+    ]
   },
   "EEE": {
     "name": "Electrical and Electronics Engineering",
@@ -201,7 +301,27 @@
           "Experience": "23 yrs 9 mts"
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "name": "CodeFest",
+        "date": "15th - 17th March 2023",
+        "description": "CodeFest is an annual coding competition that brings together the brightest minds in the field of computer science. Participants compete in a series of challenges designed to test their coding skills, problem-solving abilities, and creativity. The event is a platform for students to showcase their talent, learn from industry experts, and network with peers from around the world.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random"
+      }
+    ]
   },
   "MCA": {
     "name": "Master of Computer Applications",
@@ -235,7 +355,27 @@
           "Experience": "23 yrs 9 mts"
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "name": "CodeFest",
+        "date": "15th - 17th March 2023",
+        "description": "CodeFest is an annual coding competition that brings together the brightest minds in the field of computer science. Participants compete in a series of challenges designed to test their coding skills, problem-solving abilities, and creativity. The event is a platform for students to showcase their talent, learn from industry experts, and network with peers from around the world.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random"
+      }
+    ]
   },
   "MBA": {
     "name": "Master of Business Administration",
@@ -269,6 +409,26 @@
           "Experience": "23 yrs 9 mts"
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "name": "CodeFest",
+        "date": "15th - 17th March 2023",
+        "description": "CodeFest is an annual coding competition that brings together the brightest minds in the field of computer science. Participants compete in a series of challenges designed to test their coding skills, problem-solving abilities, and creativity. The event is a platform for students to showcase their talent, learn from industry experts, and network with peers from around the world.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random"
+      }
+    ]
   }
 }

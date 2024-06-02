@@ -1,5 +1,5 @@
 export interface Event {
-    title: string;
+    name: string;
     date: string;
     description: string;
     image: string;
