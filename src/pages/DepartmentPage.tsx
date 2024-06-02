@@ -119,7 +119,7 @@ export default function DepartmentPage() {
             <DepartmentAbout mode={mode} department={departments[dept]} />
           )}
           {selectedButton === "Faculty" && (
-            <DepartmentFaculty facultyInfo={departments[dept].facultyInfo} />
+            <DepartmentFaculty department={departments[dept]} />
           )}
           {selectedButton === "Events" && <DepartmentEvent />}
         </Box>

@@ -9,17 +9,17 @@ import {
   Typography,
 } from "@mui/material";
 import { Faculty } from "../../data/Faculty";
-import { FacultyInfo } from "../../data/Departments";
+import { Department } from "../../data/Departments";
 
 interface DepartmentFacultyProps {
-  facultyInfo: FacultyInfo;
+  department: Department;
 }
 
-const DepartmentFaculty = ({ facultyInfo }: DepartmentFacultyProps) => {
+const DepartmentFaculty = ({ department }: DepartmentFacultyProps) => {
   return (
     <>
       <img
-        src={facultyInfo.image}
+        src={department.facultyInfo.image}
         alt={"Alt"}
         style={{
           width: "100%",
@@ -29,12 +29,24 @@ const DepartmentFaculty = ({ facultyInfo }: DepartmentFacultyProps) => {
         }}
       />
       <Typography
-        textAlign={{ xs: "center", md: "center", lg: "left" }}
+        textAlign={{ xs: "center", md: "center", lg: "center" }}
         variant="h4"
         fontWeight={"bold"}
         sx={{
           fontSize: { xs: 25, sm: 40 },
           mt: 5,
+          "& span": { color: "#1F278D" },
+        }}
+      >
+        <span>{department.name}</span> 
+      </Typography>
+      <Typography
+        textAlign={{ xs: "center", md: "center", lg: "center" }}
+        variant="h4"
+        fontWeight={"bold"}
+        sx={{
+          fontSize: { xs: 25, sm: 40 },
+          textDecoration: "underline",
           "& span": { color: "#1F278D" },
         }}
       >
@@ -68,7 +80,7 @@ const DepartmentFaculty = ({ facultyInfo }: DepartmentFacultyProps) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {facultyInfo.facultyList.map((faculty: Faculty) => (
+              {department.facultyInfo.facultyList.map((faculty: Faculty) => (
                 <TableRow>
                   <TableCell>{faculty.Name}</TableCell>
                   <TableCell>{faculty.Designation}</TableCell>

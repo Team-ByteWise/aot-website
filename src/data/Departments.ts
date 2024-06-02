@@ -8,7 +8,7 @@ interface PlacementStatistics {
   totalOffers: number;
 }
 
-export interface FacultyInfo {
+interface FacultyInfo {
   facultyList: Faculty[];
   image: string;
 }
