@@ -19,13 +19,7 @@ import Footer from "../components/Footer/Footer";
 import image5 from "../assets/images/image_5.png";
 import facultyList from "../assets/data/faculty.json";
 import NavBarItems from "../data/NavBarItems";
-
-interface FacultyProfile {
-  Name: string;
-  Designation: string;
-  "Highest Qualification": string;
-  Experience: string;
-}
+import { Faculty } from "../data/Faculty";
 
 export default function DepartmentPage() {
   let currentTheme = localStorage.getItem("theme");
@@ -113,7 +107,7 @@ export default function DepartmentPage() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {facultyList.map((faculty: FacultyProfile) => (
+                {facultyList.map((faculty: Faculty) => (
                   <TableRow>
                     <TableCell>{faculty.Name}</TableCell>
                     <TableCell>{faculty.Designation}</TableCell>

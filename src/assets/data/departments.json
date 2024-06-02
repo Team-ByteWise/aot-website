@@ -8,7 +8,30 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+    "image": "/src/assets/images/image_5.png",
+    "facultyList": [
+      {
+        "Name": "Sripati Mukhopadhyay",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "40 yrs 8 mts"
+      },
+      {
+        "Name": "Dilip Kumar Maity",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "20 yrs 11 mts"
+      },
+      {
+        "Name": "Partha Dey",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "23 yrs 9 mts"
+      }
+    ]
+  }
   },
   "CSBS": {
     "name": "Computer Science and Business Systems",
@@ -19,7 +42,30 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+    "image": "/src/assets/images/image_5.png",
+    "facultyList": [
+      {
+        "Name": "Sripati Mukhopadhyay",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "40 yrs 8 mts"
+      },
+      {
+        "Name": "Dilip Kumar Maity",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "20 yrs 11 mts"
+      },
+      {
+        "Name": "Partha Dey",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "23 yrs 9 mts"
+      }
+    ]
+  }
   },
   "EE": {
     "name": "Electrical Engineering",
@@ -30,7 +76,30 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+    "image": "/src/assets/images/image_5.png",
+    "facultyList": [
+      {
+        "Name": "Sripati Mukhopadhyay",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "40 yrs 8 mts"
+      },
+      {
+        "Name": "Dilip Kumar Maity",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "20 yrs 11 mts"
+      },
+      {
+        "Name": "Partha Dey",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "23 yrs 9 mts"
+      }
+    ]
+  }
   },
   "ME": {
     "name": "Mechanical Engineering",
@@ -41,7 +110,30 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+    "image": "/src/assets/images/image_5.png",
+    "facultyList": [
+      {
+        "Name": "Sripati Mukhopadhyay",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "40 yrs 8 mts"
+      },
+      {
+        "Name": "Dilip Kumar Maity",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "20 yrs 11 mts"
+      },
+      {
+        "Name": "Partha Dey",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "23 yrs 9 mts"
+      }
+    ]
+  }
   },
   "ECE": {
     "name": "Electronics and Communication Engineering",
@@ -52,7 +144,30 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+    "image": "/src/assets/images/image_5.png",
+    "facultyList": [
+      {
+        "Name": "Sripati Mukhopadhyay",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "40 yrs 8 mts"
+      },
+      {
+        "Name": "Dilip Kumar Maity",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "20 yrs 11 mts"
+      },
+      {
+        "Name": "Partha Dey",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "23 yrs 9 mts"
+      }
+    ]
+  }
   },
   "EEE": {
     "name": "Electrical and Electronics Engineering",
@@ -63,7 +178,30 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+    "image": "/src/assets/images/image_5.png",
+    "facultyList": [
+      {
+        "Name": "Sripati Mukhopadhyay",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "40 yrs 8 mts"
+      },
+      {
+        "Name": "Dilip Kumar Maity",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "20 yrs 11 mts"
+      },
+      {
+        "Name": "Partha Dey",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "23 yrs 9 mts"
+      }
+    ]
+  }
   },
   "MCA": {
     "name": "Master of Computer Applications",
@@ -74,7 +212,30 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+    "image": "/src/assets/images/image_5.png",
+    "facultyList": [
+      {
+        "Name": "Sripati Mukhopadhyay",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "40 yrs 8 mts"
+      },
+      {
+        "Name": "Dilip Kumar Maity",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "20 yrs 11 mts"
+      },
+      {
+        "Name": "Partha Dey",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "23 yrs 9 mts"
+      }
+    ]
+  }
   },
   "MBA": {
     "name": "Master of Business Administration",
@@ -85,6 +246,29 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+    "image": "/src/assets/images/image_5.png",
+    "facultyList": [
+      {
+        "Name": "Sripati Mukhopadhyay",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "40 yrs 8 mts"
+      },
+      {
+        "Name": "Dilip Kumar Maity",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "20 yrs 11 mts"
+      },
+      {
+        "Name": "Partha Dey",
+        "Designation": "Professor",
+        "Highest Qualification": "Ph.D",
+        "Experience": "23 yrs 9 mts"
+      }
+    ]
+  }
   }
 }
