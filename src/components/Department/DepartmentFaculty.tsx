@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { Faculty } from "../../data/Faculty";
 import { Department } from "../../data/Departments";
+import image5 from "../../assets/images/image_5.png"
 
 interface DepartmentFacultyProps {
   department: Department;
@@ -19,7 +20,7 @@ const DepartmentFaculty = ({ department }: DepartmentFacultyProps) => {
   return (
     <>
       <img
-        src={department.facultyInfo.image}
+        src={image5}
         alt={"Alt"}
         style={{
           width: "100%",
