@@ -127,217 +127,204 @@ function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
   };
 
   return (
-    <div>
-      <AppBar
-        position="fixed"
-        sx={{
-          boxShadow: 0,
-          bgcolor: "transparent",
-          backgroundImage: "none",
-        }}
+    <AppBar
+      position="fixed"
+      sx={{
+        boxShadow: 0,
+        bgcolor: "transparent",
+        backgroundImage: "none",
+      }}
+    >
+      <Toolbar
+        variant="regular"
+        sx={(theme) => ({
+          paddingBottom: { xs: 1, md: 2 },
+          borderBottomLeftRadius: "25px",
+          borderBottomRightRadius: "25px",
+          bgcolor:
+            theme.palette.mode === "light"
+              ? "rgba(255, 255, 255, 0.4)"
+              : "rgba(0, 0, 0, 0.4)",
+          backdropFilter: "blur(24px)",
+          maxHeight: 400,
+          width: "100%",
+          border: "1px solid",
+          borderColor: "divider",
+          boxShadow:
+            theme.palette.mode === "light"
+              ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
+              : "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
+        })}
       >
-        <Toolbar
-          variant="regular"
-          sx={(theme) => ({
-            paddingBottom: { xs: 1, md: 2 },
-            borderBottomLeftRadius: "25px",
-            borderBottomRightRadius: "25px",
-            bgcolor:
-              theme.palette.mode === "light"
-                ? "rgba(255, 255, 255, 0.4)"
-                : "rgba(0, 0, 0, 0.4)",
-            backdropFilter: "blur(24px)",
-            maxHeight: 400,
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
             width: "100%",
-            border: "1px solid",
-            borderColor: "divider",
-            boxShadow:
-              theme.palette.mode === "light"
-                ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
-                : "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
-          })}
+            height: "100%",
+          }}
         >
           <Box
             sx={{
-              display: "flex",
-              flexDirection: "column",
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
               alignItems: "center",
-              justifyContent: "center",
               width: "100%",
-              height: "100%",
+              height: "100px",
+            }}
+          >
+            <AOTLogo
+              mode={mode}
+              style={logoStyle}
+              onClick={() => navigate("/")}
+            />
+            <Box>
+              <Typography variant="h6" fontWeight={"bold"} color="text.primary">
+                ACADEMY OF TECHNOLOGY
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Translate your vision into reality
+              </Typography>
+              <Typography variant="body2" color="text.semiSecondary">
+                Approved by AICTE, Affiliated to MAKAUT, Accredited by NBA &
+                Ranked by NIRF
+              </Typography>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              display: { xs: "flex", md: "none" },
+              paddingTop: "40px",
+              paddingBottom: "40px",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+              width: "100%",
+              height: "30px",
+            }}
+          >
+            <AOTLogo
+              mode={mode}
+              style={{
+                width: "auto",
+                height: "25px",
+                cursor: "pointer",
+                marginRight: "10px",
+              }}
+            />
+            <Box>
+              <Typography variant="h6" color="text.primary">
+                Academy Of Technology
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Translate your vision into reality
+              </Typography>
+            </Box>
+            <Box>
+              <Button
+                variant="text"
+                color="primary"
+                aria-label="menu"
+                onClick={toggleDrawer(true)}
+                sx={{ minWidth: "30px", p: "4px" }}
+              >
+                <MenuIcon />
+              </Button>
+              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+                <Box
+                  sx={{
+                    minWidth: "60dvw",
+                    p: 2,
+                    backgroundColor: "background.paper",
+                    flexGrow: 1,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      flexGrow: 1,
+                      marginTop: "5px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    <Button
+                      variant="text"
+                      color="primary"
+                      aria-label="menu"
+                      onClick={toggleDrawer(false)}
+                      sx={{ minWidth: "30px", p: "4px" }}
+                    >
+                      <CloseOutlined />
+                    </Button>
+
+                    <ToggleColorMode
+                      mode={mode}
+                      toggleColorMode={toggleColorMode}
+                    />
+                  </Box>
+                  <Search sx={{ marginBottom: "15px" }}>
+                    <SearchIconWrapper>
+                      <SearchIcon />
+                    </SearchIconWrapper>
+                    <SearchStyledInputBase
+                      placeholder="Search…"
+                      inputProps={{ "aria-label": "search" }}
+                    />
+                  </Search>
+                  {parseNavBarItems(navBarItems, "sm")}
+                </Box>
+              </Drawer>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              paddingLeft: "20px",
             }}
           >
             <Box
               sx={{
-                display: { xs: "none", md: "flex" },
-                flexDirection: "row",
-                alignItems: "center",
-                width: "100%",
-                height: "100px",
-              }}
-            >
-              <AOTLogo
-                mode={mode}
-                style={logoStyle}
-                onClick={() => navigate("/")}
-              />
-              <Box>
-                <Typography
-                  variant="h6"
-                  fontWeight={"bold"}
-                  color="text.primary"
-                >
-                  ACADEMY OF TECHNOLOGY
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Translate your vision into reality
-                </Typography>
-                <Typography variant="body2" color="text.semiSecondary">
-                  Approved by AICTE, Affiliated to MAKAUT, Accredited by NBA &
-                  Ranked by NIRF
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                display: { xs: "flex", md: "none" },
-                paddingTop: "40px",
-                paddingBottom: "40px",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-between",
-                width: "100%",
-                height: "30px",
-              }}
-            >
-              <AOTLogo
-                mode={mode}
-                style={{
-                  width: "auto",
-                  height: "25px",
-                  cursor: "pointer",
-                  marginRight: "10px",
-                }}
-              />
-              <Box>
-                <Typography variant="h6" color="text.primary">
-                  Academy Of Technology
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Translate your vision into reality
-                </Typography>
-              </Box>
-              <Box>
-                <Button
-                  variant="text"
-                  color="primary"
-                  aria-label="menu"
-                  onClick={toggleDrawer(true)}
-                  sx={{ minWidth: "30px", p: "4px" }}
-                >
-                  <MenuIcon />
-                </Button>
-                <Drawer
-                  anchor="right"
-                  open={open}
-                  onClose={toggleDrawer(false)}
-                >
-                  <Box
-                    sx={{
-                      minWidth: "60dvw",
-                      p: 2,
-                      backgroundColor: "background.paper",
-                      flexGrow: 1,
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        flexGrow: 1,
-                        marginTop: "5px",
-                        marginBottom: "20px",
-                      }}
-                    >
-                      <Button
-                        variant="text"
-                        color="primary"
-                        aria-label="menu"
-                        onClick={toggleDrawer(false)}
-                        sx={{ minWidth: "30px", p: "4px" }}
-                      >
-                        <CloseOutlined />
-                      </Button>
-
-                      <ToggleColorMode
-                        mode={mode}
-                        toggleColorMode={toggleColorMode}
-                      />
-                    </Box>
-                    <Search sx={{ marginBottom: "15px" }}>
-                      <SearchIconWrapper>
-                        <SearchIcon />
-                      </SearchIconWrapper>
-                      <SearchStyledInputBase
-                        placeholder="Search…"
-                        inputProps={{ "aria-label": "search" }}
-                      />
-                    </Search>
-                    {parseNavBarItems(navBarItems, "sm")}
-                  </Box>
-                </Drawer>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                width: "100%",
+                flexGrow: 1,
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-between",
-                paddingLeft: "20px",
+                ml: "-18px",
+                px: 0,
               }}
             >
-              <Box
-                sx={{
-                  flexGrow: 1,
-                  display: "flex",
-                  alignItems: "center",
-                  ml: "-18px",
-                  px: 0,
-                }}
-              >
-                <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                  {parseNavBarItems(navBarItems, "md")}
-                </Box>
-              </Box>
-              <Box
-                sx={{
-                  display: { xs: "none", md: "flex" },
-                  gap: 0.5,
-                  alignItems: "center",
-                }}
-              >
-                <Search>
-                  <SearchIconWrapper>
-                    <SearchIcon />
-                  </SearchIconWrapper>
-                  <SearchStyledInputBase
-                    placeholder="Search…"
-                    inputProps={{ "aria-label": "search" }}
-                  />
-                </Search>
-                <ToggleColorMode
-                  mode={mode}
-                  toggleColorMode={toggleColorMode}
-                />
+              <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                {parseNavBarItems(navBarItems, "md")}
               </Box>
             </Box>
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                gap: 0.5,
+                alignItems: "center",
+              }}
+            >
+              <Search>
+                <SearchIconWrapper>
+                  <SearchIcon />
+                </SearchIconWrapper>
+                <SearchStyledInputBase
+                  placeholder="Search…"
+                  inputProps={{ "aria-label": "search" }}
+                />
+              </Search>
+              <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
+            </Box>
           </Box>
-        </Toolbar>
-      </AppBar>
-    </div>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 }
 

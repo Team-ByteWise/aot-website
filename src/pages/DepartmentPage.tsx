@@ -20,6 +20,7 @@ import NavBarItems from "../data/NavBarItems";
 import DepartmentAbout from "../components/Department/DepartmentAbout";
 import DepartmentFaculty from "../components/Department/DepartmentFaculty";
 import DepartmentEvent from "../components/Department/DepartmentEvent";
+import { useOverlayScrollbars } from "overlayscrollbars-react";
 
 const subNavBarItems = ["About", "Faculty", "Events"];
 
@@ -37,6 +38,21 @@ export default function DepartmentPage() {
   const toggleColorMode = () => {
     setMode((prev) => (prev === "dark" ? "light" : "dark"));
   };
+
+  const ref = React.createRef<HTMLDivElement>();
+
+  const [initBodyOverlayScrollbars] = useOverlayScrollbars({
+    defer: true,
+    options: {
+      scrollbars: {
+        theme: mode === "dark" ? "os-theme-light" : "os-theme-dark",
+      },
+    },
+  });
+
+  useEffect(() => {
+    initBodyOverlayScrollbars(ref.current!);
+  }, [initBodyOverlayScrollbars, ref]);
 
   useEffect(() => {
     localStorage.setItem("theme", mode);
@@ -64,70 +80,72 @@ export default function DepartmentPage() {
         toggleColorMode={toggleColorMode}
         navBarItems={NavBarItems}
       />
-      <Container
-        maxWidth="xl"
-        sx={{
-          mt: { xs: 15, md: 25 },
-        }}
-      >
-        <AppBar
-          position="static"
+      <div style={{ height: "100vh" }} ref={ref}>
+        <Container
+          maxWidth="xl"
           sx={{
-            boxShadow: 0,
-            bgcolor: "transparent",
-            backgroundImage: "none",
+            mt: { xs: 15, md: 25 },
           }}
         >
-          <Toolbar
+          <AppBar
+            position="static"
             sx={{
-              borderBottom:
-                mode === "light"
-                  ? "1px solid rgba(247, 248, 250, 1)"
-                  : "1px solid rgba(24, 28, 32, 1)",
-              pb: 2,
-              mb: 5,
+              boxShadow: 0,
+              bgcolor: "transparent",
+              backgroundImage: "none",
             }}
           >
-            <Stack
-              direction={"row"}
-              spacing={7}
-              justifyContent={"center"}
-              alignItems={"center"}
-              sx={{ width: "100%" }}
+            <Toolbar
+              sx={{
+                borderBottom:
+                  mode === "light"
+                    ? "1px solid rgba(247, 248, 250, 1)"
+                    : "1px solid rgba(24, 28, 32, 1)",
+                pb: 2,
+                mb: 5,
+              }}
             >
-              {subNavBarItems.map((item) => (
-                <Button
-                  variant="outlined"
-                  onClick={() => {
-                    setSelectedButton(item);
-                  }}
-                  sx={{
-                    backgroundColor:
-                      selectedButton === item ? "primary.main" : "inherit", // Highlight the selected button
-                    color: selectedButton === item ? "#fff" : "",
-                  }}
-                >
-                  {item}
-                </Button>
-              ))}
-            </Stack>
-          </Toolbar>
-        </AppBar>
+              <Stack
+                direction={"row"}
+                spacing={7}
+                justifyContent={"center"}
+                alignItems={"center"}
+                sx={{ width: "100%" }}
+              >
+                {subNavBarItems.map((item) => (
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      setSelectedButton(item);
+                    }}
+                    sx={{
+                      backgroundColor:
+                        selectedButton === item ? "primary.main" : "inherit", // Highlight the selected button
+                      color: selectedButton === item ? "#fff" : "",
+                    }}
+                  >
+                    {item}
+                  </Button>
+                ))}
+              </Stack>
+            </Toolbar>
+          </AppBar>
 
-        <Box sx={{}}>
-          {selectedButton === "About" && (
-            <DepartmentAbout mode={mode} department={departments[dept]} />
-          )}
-          {selectedButton === "Faculty" && (
-            <DepartmentFaculty department={departments[dept]} />
-          )}
-          {selectedButton === "Events" && (
-            <DepartmentEvent department={departments[dept]} />
-          )}
-        </Box>
-      </Container>
+          <Box sx={{}}>
+            {selectedButton === "About" && (
+              <DepartmentAbout mode={mode} department={departments[dept]} />
+            )}
+            {selectedButton === "Faculty" && (
+              <DepartmentFaculty department={departments[dept]} />
+            )}
+            {selectedButton === "Events" && (
+              <DepartmentEvent department={departments[dept]} />
+            )}
+          </Box>
+        </Container>
 
-      <Footer mode={mode} />
+        <Footer mode={mode} />
+      </div>
     </ThemeProvider>
   );
 }
