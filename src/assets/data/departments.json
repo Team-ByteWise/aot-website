@@ -13,22 +13,214 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
+          "Name": "Arindrajit Pal",
+          "Designation": "Associate Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
+          "Experience": "17 yrs 6 mts"
         },
         {
-          "Name": "Dilip Kumar Maity",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "20 yrs 11 mts"
+          "Name": "Divyangna Sharma",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
         },
         {
-          "Name": "Partha Dey",
-          "Designation": "Professor",
+          "Name": "Sailik Sen",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Sukanta Bose",
+          "Designation": "Assistant Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
+          "Experience": "12 yrs"
+        },
+        {
+          "Name": "Soumya Chatterjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Swarna Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "9 yrs"
+        },
+        {
+          "Name": "Srikrishna Awasthi",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Basab Chatterjee",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "18 yrs"
+        },
+        {
+          "Name": "Partha Ghosh",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "9 yrs"
+        },
+        {
+          "Name": "Avishek Chakraborty",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yr 1 mts"
+        },
+        {
+          "Name": "Jayanta Digar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yr"
+        },
+        {
+          "Name": "Krishna Bhowal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "18 yrs 6 mts"
+        },
+        {
+          "Name": "Debasish Sur",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Suman Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Hiranmoy Mondal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "16 yrs 1 mts"
+        },
+        {
+          "Name": "Subham Pramanik",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
+        },
+        {
+          "Name": "Shamik Kumar Bose",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "13 yrs"
+        },
+        {
+          "Name": "Abhijit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "13 yrs 4 mts"
+        },
+        {
+          "Name": "Suman Goswami",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Oendrila Samanta",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "3yrs"
+        },
+        {
+          "Name": "Nisantika Biswas",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "9 yrs"
+        },
+        {
+          "Name": "Srinjoy Bid",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "19 yrs 5 mts"
+        },
+        {
+          "Name": "Biswajit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yrs 3 mts"
+        },
+        {
+          "Name": "Dipanjan De",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "6 yrs"
+        },
+        {
+          "Name": "Aloke Kumar Ghoshal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.B.A",
+          "Experience": "15 yrs 7 mts"
+        },
+        {
+          "Name": "Nibedita Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Sirshendu Saha",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "14 yrs 10 mts"
+        },
+        {
+          "Name": "Anumita Singha Roy",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Ramnayan Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "7 yrs"
+        },
+        {
+          "Name": "Moupikta Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Venu Gopal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MCA",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Anindya Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.B.A",
+          "Experience": "19 yrs 1 mts"
+        },
+        {
+          "Name": "Sourav Kayal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Supantha Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Aaheli Sarkar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
         }
       ]
     },
@@ -67,22 +259,58 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
+          "Name": "Prasenjit Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "20 yrs"
         },
         {
-          "Name": "Dilip Kumar Maity",
-          "Designation": "Professor",
+          "Name": "Soumya Chatterjee",
+          "Designation": "Assistant Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "20 yrs 11 mts"
+          "Experience": "13 yrs 7 mts"
         },
         {
-          "Name": "Partha Dey",
-          "Designation": "Professor",
+          "Name": "Biswajit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yrs 3 mts"
+        },
+        {
+          "Name": "Nupur Chhaule",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "11 yrs 6 mts"
+        },
+        {
+          "Name": "Chiranjit Guchait",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Divyangna Sharma",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Soment Kumar Hati",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "20 yrs 6 mts"
+        },
+        {
+          "Name": "Krishna Bhowal",
+          "Designation": "Associate Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
+          "Experience": "18 yrs 6 mts"
+        },
+        {
+          "Name": "Sarjita Soo",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "4 yrs"
         }
       ]
     },
@@ -121,22 +349,124 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
+          "Name": "Subham Pramanik",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
         },
         {
-          "Name": "Dilip Kumar Maity",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "20 yrs 11 mts"
+          "Name": "Aaheli Sarkar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
         },
         {
-          "Name": "Partha Dey",
+          "Name": "Kanishka Majumder",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Abhinaba Dutta",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "15 yrs 6 mts"
+        },
+        {
+          "Name": "Jitendra Banerjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3yrs 1 mts"
+        },
+        {
+          "Name": "Partha Banerjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "7 yrs"
+        },
+        {
+          "Name": "Uday Kumar Mandal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "14 yrs 7 mts"
+        },
+        {
+          "Name": "Dhrubajyoti Mondal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yrs 2 mts"
+        },
+        {
+          "Name": "Sreetama Sinha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "1 yr 7 mts"
+        },
+        {
+          "Name": "Supantha Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Tanmay Makar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Kaustav Bhadar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Suman Kumar Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 6 mts"
+        },
+        {
+          "Name": "Buddhadeb Chatterjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "10 yrs 1 mts"
+        },
+        {
+          "Name": "Biswaranjan Das",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "15 yrs 7 mts"
+        },
+        {
+          "Name": "Abhijit Banerjee",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
+          "Experience": "17 yrs 8 mts"
+        },
+        {
+          "Name": "Nabanita Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Bappaditya Mondal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "14 yrs 1 mts"
+        },
+        {
+          "Name": "Paulomi Chattopadhyay",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "16 yrs 5 mts"
+        },
+        {
+          "Name": "Firoj Ahamad",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
         }
       ]
     },
@@ -167,7 +497,7 @@
     "about": "Embark on a journey of innovation and creativity with Mechanical Engineering at A.O.T. Our department is a hub of hands-on learning, where students design, build, and test cutting-edge solutions to real-world challenges. With a focus on sustainability and efficiency, we empower minds to engineer a better tomorrow.",
     "placementStatistics": {
       "year": 2023,
-      "percentage": 87.50,
+      "percentage": 87.5,
       "placedStudents": 88,
       "totalOffers": 77
     },
@@ -175,22 +505,22 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
+          "Name": "Jayanta Digar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yr"
         },
         {
-          "Name": "Dilip Kumar Maity",
-          "Designation": "Professor",
+          "Name": "Subhra Chatterjee",
+          "Designation": "Associate Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "20 yrs 11 mts"
+          "Experience": "13 yrs 6 mts"
         },
         {
-          "Name": "Partha Dey",
-          "Designation": "Professor",
+          "Name": "Paulomi Chattopadhyay",
+          "Designation": "Associate Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
+          "Experience": "16 yrs 5 mts"
         }
       ]
     },
@@ -221,7 +551,7 @@
     "about": "Explore the world of Electronics and Communication Engineering at A.O.T, where ideas take flight. Our department is a playground of innovation, where students design, build, and connect the technologies of tomorrow. From circuits to communication systems, we empower minds to bridge the gap between imagination and reality, shaping the future of connectivity.",
     "placementStatistics": {
       "year": 2023,
-      "percentage": 150.00,
+      "percentage": 150.0,
       "placedStudents": 128,
       "totalOffers": 192
     },
@@ -229,10 +559,64 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
+          "Name": "Shiladitya Acharyya",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Nabanita Das",
+          "Designation": "Assistant Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Srinjoy Bid",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "19 yrs 5 mts"
+        },
+        {
+          "Name": "Jayanta Digar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yr"
+        },
+        {
+          "Name": "Sruti Mondal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Nisantika Biswas",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "9 yrs"
+        },
+        {
+          "Name": "Chiranjit Guchait",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Suman Sengupta",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "27 yrs"
+        },
+        {
+          "Name": "Krishna Bhowal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "18 yrs 6 mts"
+        },
+        {
+          "Name": "Sajal Sasmal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "4 yrs"
         },
         {
           "Name": "Dilip Kumar Maity",
@@ -241,10 +625,58 @@
           "Experience": "20 yrs 11 mts"
         },
         {
+          "Name": "Snehasish Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Sukanta Bose",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "12 yrs"
+        },
+        {
+          "Name": "Suman Goswami",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Tanmay Makar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Sanjib Kundu",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "11 yrs 6 mts"
+        },
+        {
+          "Name": "Arindrajit Pal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "17 yrs 6 mts"
+        },
+        {
+          "Name": "Aaheli Sarkar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
           "Name": "Partha Dey",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
           "Experience": "23 yrs 9 mts"
+        },
+        {
+          "Name": "Debjani Bhattacharya",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
         }
       ]
     },
@@ -283,22 +715,196 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
+          "Name": "Tapas Tewary",
+          "Designation": "Assistant Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
+          "Experience": "13 yrs 6 mts"
         },
         {
-          "Name": "Dilip Kumar Maity",
-          "Designation": "Professor",
+          "Name": "Nayan Ranjan Das",
+          "Designation": "Assistant Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "20 yrs 11 mts"
+          "Experience": "2 yrs"
         },
         {
-          "Name": "Partha Dey",
-          "Designation": "Professor",
+          "Name": "Sirshendu Saha",
+          "Designation": "Associate Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
+          "Experience": "14 yrs 10 mts"
+        },
+        {
+          "Name": "Subir Panja",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Poulomi Ganguly",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "K.M.Priti",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MCA",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Shaoli Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MBA",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Nibedita Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Niloy Ghosh",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "7 yrs 5 mts"
+        },
+        {
+          "Name": "Dhrubajyoti Mondal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yrs 2 mts"
+        },
+        {
+          "Name": "Debjani Bhattacharya",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
+        },
+        {
+          "Name": "Subhasish Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yrs 3 mts"
+        },
+        {
+          "Name": "Sayan Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Uday Kumar Mandal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "14 yrs 7 mts"
+        },
+        {
+          "Name": "Soment Kumar Hati",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "20 yrs 6 mts"
+        },
+        {
+          "Name": "Abhijit Mallick",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "20 yrs 5 mts"
+        },
+        {
+          "Name": "Pinak Pani Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs"
+        },
+        {
+          "Name": "Sanjib Kundu",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "11 yrs 6 mts"
+        },
+        {
+          "Name": "Rakhi Neogi",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "11 yrs 7 mts"
+        },
+        {
+          "Name": "Suchibrata Dutta",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "13 yrs 2 mts"
+        },
+        {
+          "Name": "Shamik Kumar Bose",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "13 yrs"
+        },
+        {
+          "Name": "Abhinaba Dutta",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "15 yrs 6 mts"
+        },
+        {
+          "Name": "Nabanita Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Anindya Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.B.A",
+          "Experience": "19 yrs 1 mts"
+        },
+        {
+          "Name": "Kanishka Majumder",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Dwijen Biswas",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MBA",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Ramnayan Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "7 yrs"
+        },
+        {
+          "Name": "Abhijit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "13 yrs 4 mts"
+        },
+        {
+          "Name": "Tanmay Makar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Sandip Saha Chowdhury",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "20 yrs 9 mts"
+        },
+        {
+          "Name": "Sajal Sasmal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "4 yrs"
+        },
+        {
+          "Name": "Manish Sharma",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
         }
       ]
     },
@@ -337,22 +943,112 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
+          "Name": "Sajal Sasmal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "4 yrs"
         },
         {
-          "Name": "Dilip Kumar Maity",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "20 yrs 11 mts"
+          "Name": "Suman Bhattacharya",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "13 yrs 7 mts"
         },
         {
-          "Name": "Partha Dey",
-          "Designation": "Professor",
+          "Name": "Soumendu Banerjee",
+          "Designation": "Assistant Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
+          "Experience": "4 yrs"
+        },
+        {
+          "Name": "Debasish Sur",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Nibedita Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Niloy Ghosh",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "7 yrs 5 mts"
+        },
+        {
+          "Name": "Subham Pramanik",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
+        },
+        {
+          "Name": "Jayjeet Sarkar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "14 yrs"
+        },
+        {
+          "Name": "Subir Panja",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Supantha Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Jayanta Digar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yr"
+        },
+        {
+          "Name": "Abhijit Mallick",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "20 yrs 5 mts"
+        },
+        {
+          "Name": "Anshupriya Shome",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Arun Kumar Sadhu",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "6 yrs"
+        },
+        {
+          "Name": "Soumya Chatterjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Biswajit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yrs 3 mts"
+        },
+        {
+          "Name": "Anil Kumar Sharma",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MBA",
+          "Experience": "11 yrs"
+        },
+        {
+          "Name": "Dipanwita Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
         }
       ]
     },
@@ -391,22 +1087,28 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
+          "Name": "Anshupriya Shome",
+          "Designation": "Assistant Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
+          "Experience": "2 yrs 1 mts"
         },
         {
-          "Name": "Dilip Kumar Maity",
-          "Designation": "Professor",
+          "Name": "Subir Panja",
+          "Designation": "Associate Professor",
           "Highest Qualification": "Ph.D",
-          "Experience": "20 yrs 11 mts"
+          "Experience": "13 yrs 7 mts"
         },
         {
-          "Name": "Partha Dey",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
+          "Name": "Shaoli Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MBA",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Niloy Ghosh",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "7 yrs 5 mts"
         }
       ]
     },
