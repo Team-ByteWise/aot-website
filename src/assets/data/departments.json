@@ -13,16 +13,16 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
-        },
-        {
           "Name": "Dilip Kumar Maity",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
           "Experience": "20 yrs 11 mts"
+        },
+        {
+          "Name": "Sripati Mukhopadhyay",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "40 yrs 8 mts"
         },
         {
           "Name": "Partha Dey",
@@ -67,12 +67,6 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
-        },
-        {
           "Name": "Dilip Kumar Maity",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
@@ -83,6 +77,12 @@
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
           "Experience": "23 yrs 9 mts"
+        },
+        {
+          "Name": "Sripati Mukhopadhyay",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "40 yrs 8 mts"
         }
       ]
     },
@@ -175,6 +175,12 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
+          "Name": "Partha Dey",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "23 yrs 9 mts"
+        },
+        {
           "Name": "Sripati Mukhopadhyay",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
@@ -185,12 +191,6 @@
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
           "Experience": "20 yrs 11 mts"
-        },
-        {
-          "Name": "Partha Dey",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
         }
       ]
     },
@@ -235,16 +235,16 @@
           "Experience": "40 yrs 8 mts"
         },
         {
-          "Name": "Dilip Kumar Maity",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "20 yrs 11 mts"
-        },
-        {
           "Name": "Partha Dey",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
           "Experience": "23 yrs 9 mts"
+        },
+        {
+          "Name": "Dilip Kumar Maity",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "20 yrs 11 mts"
         }
       ]
     },
@@ -283,6 +283,12 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
+          "Name": "Partha Dey",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "23 yrs 9 mts"
+        },
+        {
           "Name": "Sripati Mukhopadhyay",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
@@ -293,12 +299,6 @@
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
           "Experience": "20 yrs 11 mts"
-        },
-        {
-          "Name": "Partha Dey",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "23 yrs 9 mts"
         }
       ]
     },
@@ -337,16 +337,16 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
-        },
-        {
           "Name": "Dilip Kumar Maity",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
           "Experience": "20 yrs 11 mts"
+        },
+        {
+          "Name": "Sripati Mukhopadhyay",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "40 yrs 8 mts"
         },
         {
           "Name": "Partha Dey",
@@ -391,12 +391,6 @@
       "image": "/src/assets/images/image_5.png",
       "facultyList": [
         {
-          "Name": "Sripati Mukhopadhyay",
-          "Designation": "Professor",
-          "Highest Qualification": "Ph.D",
-          "Experience": "40 yrs 8 mts"
-        },
-        {
           "Name": "Dilip Kumar Maity",
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
@@ -407,6 +401,12 @@
           "Designation": "Professor",
           "Highest Qualification": "Ph.D",
           "Experience": "23 yrs 9 mts"
+        },
+        {
+          "Name": "Sripati Mukhopadhyay",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "40 yrs 8 mts"
         }
       ]
     },
