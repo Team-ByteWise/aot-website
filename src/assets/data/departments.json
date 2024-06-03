@@ -8,7 +8,242 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+      "image": "/src/assets/images/image_5.png",
+      "facultyList": [
+        {
+          "Name": "Arindrajit Pal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "17 yrs 6 mts"
+        },
+        {
+          "Name": "Divyangna Sharma",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Sailik Sen",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Sukanta Bose",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "12 yrs"
+        },
+        {
+          "Name": "Soumya Chatterjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Swarna Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "9 yrs"
+        },
+        {
+          "Name": "Srikrishna Awasthi",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Basab Chatterjee",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "18 yrs"
+        },
+        {
+          "Name": "Partha Ghosh",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "9 yrs"
+        },
+        {
+          "Name": "Avishek Chakraborty",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yr 1 mts"
+        },
+        {
+          "Name": "Jayanta Digar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yr"
+        },
+        {
+          "Name": "Krishna Bhowal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "18 yrs 6 mts"
+        },
+        {
+          "Name": "Debasish Sur",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Suman Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Hiranmoy Mondal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "16 yrs 1 mts"
+        },
+        {
+          "Name": "Subham Pramanik",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
+        },
+        {
+          "Name": "Shamik Kumar Bose",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "13 yrs"
+        },
+        {
+          "Name": "Abhijit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "13 yrs 4 mts"
+        },
+        {
+          "Name": "Suman Goswami",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Oendrila Samanta",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "3yrs"
+        },
+        {
+          "Name": "Nisantika Biswas",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "9 yrs"
+        },
+        {
+          "Name": "Srinjoy Bid",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "19 yrs 5 mts"
+        },
+        {
+          "Name": "Biswajit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yrs 3 mts"
+        },
+        {
+          "Name": "Dipanjan De",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "6 yrs"
+        },
+        {
+          "Name": "Aloke Kumar Ghoshal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.B.A",
+          "Experience": "15 yrs 7 mts"
+        },
+        {
+          "Name": "Nibedita Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Sirshendu Saha",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "14 yrs 10 mts"
+        },
+        {
+          "Name": "Anumita Singha Roy",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Ramnayan Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "7 yrs"
+        },
+        {
+          "Name": "Moupikta Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Venu Gopal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MCA",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Anindya Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.B.A",
+          "Experience": "19 yrs 1 mts"
+        },
+        {
+          "Name": "Sourav Kayal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Supantha Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Aaheli Sarkar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        }
+      ]
+    },
+    "events": [
+      {
+        "name": "Techquisitive 5.0",
+        "date": "19th - 23rd March 2024",
+        "description": "🚀 Get ready to embark on an exhilarating adventure filled with a plethora of engaging activities at TechQuistive 5.0! From immersive coding challenges to brain-teasing quizzes and pulse-pounding games, this tech week at the Academy of Technology is set to redefine excitement! 🎮💻",
+        "image": "https://media.licdn.com/dms/image/D5622AQH_2f4-WymmdA/feedshare-shrink_1280/0/1709138773068?e=1720051200&v=beta&t=L4LSRYCLhHPbNWheqX29RjT7sF7Heh7buLtnjgIoF-g"
+      },
+      {
+        "name": "TechTalks",
+        "date": "20th - 22nd April 2023",
+        "description": "TechTalks is a series of interactive sessions that explore the latest trends and technologies in the field of computer science. Industry experts, researchers, and thought leaders share their insights on topics such as artificial intelligence, machine learning, cybersecurity, and more. The event is a platform for students to gain valuable knowledge, connect with industry professionals, and explore career opportunities in the tech sector.",
+        "image": "https://source.unsplash.com/random?i=2"
+      },
+      {
+        "name": "Hackathon",
+        "date": "25th - 27th May 2023",
+        "description": "Hackathon is an intense coding competition where teams of students work together to solve real-world problems using technology. Participants have 48 hours to design, build, and present a working prototype to a panel of judges. The event is a test of creativity, collaboration, and technical skills, and a chance for students to showcase their talent, learn from peers, and win exciting prizes.",
+        "image": "https://source.unsplash.com/random?i=3"
+      }
+    ]
   },
   "CSBS": {
     "name": "Computer Science and Business Systems",
@@ -19,7 +254,98 @@
       "percentage": 193.33,
       "placedStudents": 60,
       "totalOffers": 116
-    }
+    },
+    "facultyInfo": {
+      "image": "/src/assets/images/image_5.png",
+      "facultyList": [
+        {
+          "Name": "Prasenjit Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "20 yrs"
+        },
+        {
+          "Name": "Soumya Chatterjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Biswajit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yrs 3 mts"
+        },
+        {
+          "Name": "Nupur Chhaule",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "11 yrs 6 mts"
+        },
+        {
+          "Name": "Chiranjit Guchait",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Divyangna Sharma",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Soment Kumar Hati",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "20 yrs 6 mts"
+        },
+        {
+          "Name": "Krishna Bhowal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "18 yrs 6 mts"
+        },
+        {
+          "Name": "Sarjita Soo",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "4 yrs"
+        }
+      ]
+    },
+    "events": [
+      {
+        "name": "Tech Fusion Summit",
+        "date": "10th - 12th September 2023",
+        "description": "Experience the intersection of technology and business as we delve into innovative solutions and strategies for the digital age.",
+        "image": "https://source.unsplash.com/random?i=23456"
+      },
+      {
+        "name": "Digital Transformation Forum",
+        "date": "5th - 7th November 2023",
+        "description": "Explore the journey of digital transformation and its impact on businesses, industries, and society as a whole.",
+        "image": "https://source.unsplash.com/random?i=65432"
+      },
+      {
+        "name": "Blockchain Conference",
+        "date": "20th - 22nd January 2024",
+        "description": "Dive deep into the world of blockchain technology and its potential applications in finance, supply chain, and beyond.",
+        "image": "https://source.unsplash.com/random?i=45678"
+      },
+      {
+        "name": "AI Innovation Summit",
+        "date": "15th - 17th March 2024",
+        "description": "Discover the latest advancements and trends in artificial intelligence and machine learning, and their implications for business innovation.",
+        "image": "https://source.unsplash.com/random?i=87654"
+      },
+      {
+        "name": "Techpreneurship Conference",
+        "date": "25th - 27th May 2024",
+        "description": "Learn from successful tech entrepreneurs and industry experts as they share their insights and experiences in building successful tech startups.",
+        "image": "https://source.unsplash.com/random?i=98765"
+      }
+    ]
   },
   "EE": {
     "name": "Electrical Engineering",
@@ -30,7 +356,158 @@
       "percentage": 106.54,
       "placedStudents": 107,
       "totalOffers": 114
-    }
+    },
+    "facultyInfo": {
+      "image": "/src/assets/images/image_5.png",
+      "facultyList": [
+        {
+          "Name": "Subham Pramanik",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
+        },
+        {
+          "Name": "Aaheli Sarkar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Kanishka Majumder",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Abhinaba Dutta",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "15 yrs 6 mts"
+        },
+        {
+          "Name": "Jitendra Banerjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3yrs 1 mts"
+        },
+        {
+          "Name": "Partha Banerjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "7 yrs"
+        },
+        {
+          "Name": "Uday Kumar Mandal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "14 yrs 7 mts"
+        },
+        {
+          "Name": "Dhrubajyoti Mondal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yrs 2 mts"
+        },
+        {
+          "Name": "Sreetama Sinha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "1 yr 7 mts"
+        },
+        {
+          "Name": "Supantha Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Tanmay Makar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Kaustav Bhadar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Suman Kumar Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 6 mts"
+        },
+        {
+          "Name": "Buddhadeb Chatterjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "10 yrs 1 mts"
+        },
+        {
+          "Name": "Biswaranjan Das",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "15 yrs 7 mts"
+        },
+        {
+          "Name": "Abhijit Banerjee",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "17 yrs 8 mts"
+        },
+        {
+          "Name": "Nabanita Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Bappaditya Mondal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "14 yrs 1 mts"
+        },
+        {
+          "Name": "Paulomi Chattopadhyay",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "16 yrs 5 mts"
+        },
+        {
+          "Name": "Firoj Ahamad",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        }
+      ]
+    },
+    "events": [
+      {
+        "name": "Future Tech Summit",
+        "date": "5th - 10th July 2023",
+        "description": "Future Tech Summit is a premier event showcasing groundbreaking technologies. Attendees will explore innovations in AI, VR, robotics, and more, gaining insights from industry leaders.",
+        "image": "https://source.unsplash.com/random?i=353"
+      },
+      {
+        "name": "Green Tech Expo",
+        "date": "18th - 20th August 2023",
+        "description": "Green Tech Expo highlights the latest in sustainable technology. Participants can learn about renewable energy, eco-friendly innovations, and the impact of green tech on the environment.",
+        "image": "https://source.unsplash.com/random?i=23523"
+      },
+      {
+        "name": "Bioinformatics Conference",
+        "date": "10th - 12th October 2023",
+        "description": "Bioinformatics Conference brings together experts to discuss the intersection of biology and technology. The event features talks on genomic data analysis, bioinformatics tools, and recent advancements in the field.",
+        "image": "https://source.unsplash.com/random?i=32366"
+      },
+      {
+        "name": "Mobile Innovation Summit",
+        "date": "23rd - 25th November 2023",
+        "description": "Mobile Innovation Summit focuses on the latest developments in mobile technology. Attendees will explore new mobile applications, advancements in mobile networks, and future trends in the industry.",
+        "image": "https://source.unsplash.com/random?i=423432"
+      }
+    ]
   },
   "ME": {
     "name": "Mechanical Engineering",
@@ -38,10 +515,71 @@
     "about": "Embark on a journey of innovation and creativity with Mechanical Engineering at A.O.T. Our department is a hub of hands-on learning, where students design, build, and test cutting-edge solutions to real-world challenges. With a focus on sustainability and efficiency, we empower minds to engineer a better tomorrow.",
     "placementStatistics": {
       "year": 2023,
-      "percentage": 87.50,
+      "percentage": 87.5,
       "placedStudents": 88,
       "totalOffers": 77
-    }
+    },
+    "facultyInfo": {
+      "image": "/src/assets/images/image_5.png",
+      "facultyList": [
+        {
+          "Name": "Jayanta Digar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yr"
+        },
+        {
+          "Name": "Subhra Chatterjee",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 6 mts"
+        },
+        {
+          "Name": "Paulomi Chattopadhyay",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "16 yrs 5 mts"
+        }
+      ]
+    },
+    "events": [
+      {
+        "name": "Mechanical Design Symposium",
+        "date": "10th - 12th January 2023",
+        "description": "The Mechanical Design Symposium is an event where engineers and designers showcase their latest mechanical design innovations. Attendees can learn about new design methodologies, tools, and best practices.",
+        "image": "https://source.unsplash.com/random?i=234242"
+      },
+      {
+        "name": "Robotics and Automation Expo",
+        "date": "5th - 7th February 2023",
+        "description": "Robotics and Automation Expo brings together experts in robotics to present the latest advancements in automation. Participants can attend workshops, see live demonstrations, and network with industry professionals.",
+        "image": "https://source.unsplash.com/random?i=45243324"
+      },
+      {
+        "name": "Thermodynamics and Heat Transfer Conference",
+        "date": "15th - 17th March 2023",
+        "description": "This conference focuses on the latest research and developments in thermodynamics and heat transfer. Researchers and practitioners will share their findings and discuss future directions in the field.",
+        "image": "https://source.unsplash.com/random?i=6234237"
+      },
+      {
+        "name": "Automotive Engineering Forum",
+        "date": "22nd - 24th April 2023",
+        "description": "The Automotive Engineering Forum is a platform for discussing the latest trends and technologies in automotive engineering. Topics include electric vehicles, autonomous driving, and advanced manufacturing techniques.",
+        "image": "https://source.unsplash.com/random?i=853239"
+      },
+      {
+        "name": "Fluid Mechanics Workshop",
+        "date": "3rd - 5th May 2023",
+        "description": "The Fluid Mechanics Workshop offers hands-on sessions and lectures on fluid dynamics. Participants will learn about computational fluid dynamics (CFD), experimental methods, and applications in various industries.",
+        "image": "https://source.unsplash.com/random?i=125675"
+      },
+      {
+        "name": "Sustainable Manufacturing Conference",
+        "date": "18th - 20th June 2023",
+        "description": "The Sustainable Manufacturing Conference addresses the challenges and solutions in sustainable manufacturing. Attendees will learn about green manufacturing processes, materials recycling, and energy-efficient practices.",
+        "image": "https://source.unsplash.com/random?i=3254634"
+      }
+    ]
   },
   "ECE": {
     "name": "Electronics and Communication Engineering",
@@ -49,10 +587,185 @@
     "about": "Explore the world of Electronics and Communication Engineering at A.O.T, where ideas take flight. Our department is a playground of innovation, where students design, build, and connect the technologies of tomorrow. From circuits to communication systems, we empower minds to bridge the gap between imagination and reality, shaping the future of connectivity.",
     "placementStatistics": {
       "year": 2023,
-      "percentage": 150.00,
+      "percentage": 150.0,
       "placedStudents": 128,
       "totalOffers": 192
-    }
+    },
+    "facultyInfo": {
+      "image": "/src/assets/images/image_5.png",
+      "facultyList": [
+        {
+          "Name": "Shiladitya Acharyya",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Nabanita Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Srinjoy Bid",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "19 yrs 5 mts"
+        },
+        {
+          "Name": "Jayanta Digar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yr"
+        },
+        {
+          "Name": "Sruti Mondal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Nisantika Biswas",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "9 yrs"
+        },
+        {
+          "Name": "Chiranjit Guchait",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Suman Sengupta",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "27 yrs"
+        },
+        {
+          "Name": "Krishna Bhowal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "18 yrs 6 mts"
+        },
+        {
+          "Name": "Sajal Sasmal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "4 yrs"
+        },
+        {
+          "Name": "Dilip Kumar Maity",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "20 yrs 11 mts"
+        },
+        {
+          "Name": "Snehasish Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Sukanta Bose",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "12 yrs"
+        },
+        {
+          "Name": "Suman Goswami",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Tanmay Makar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Sanjib Kundu",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "11 yrs 6 mts"
+        },
+        {
+          "Name": "Arindrajit Pal",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "17 yrs 6 mts"
+        },
+        {
+          "Name": "Aaheli Sarkar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Partha Dey",
+          "Designation": "Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "23 yrs 9 mts"
+        },
+        {
+          "Name": "Debjani Bhattacharya",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
+        }
+      ]
+    },
+    "events": [
+      {
+        "name": "AI Expo",
+        "date": "7th - 7th February 2023",
+        "description": "AI Expo brings together the leading minds in artificial intelligence to showcase cutting-edge advancements and innovations. Participants can explore interactive exhibits, attend expert-led sessions, and network with AI professionals from around the world.",
+        "image": "https://source.unsplash.com/random?i=122343"
+      },
+      {
+        "name": "Robotics Competition",
+        "date": "13th - 27th September 2023",
+        "description": "The Robotics Competition challenges teams to design and build robots that can complete specific tasks. It's a thrilling event that tests innovation, engineering skills, and teamwork.",
+        "image": "https://source.unsplash.com/random?i=2453"
+      },
+      {
+        "name": "Data Science Workshop",
+        "date": "19th - 7th October 2023",
+        "description": "This workshop is designed for data enthusiasts who want to dive deep into data science techniques. Participants will engage in hands-on sessions covering data analysis, machine learning, and predictive modeling.",
+        "image": "https://source.unsplash.com/random?i=3435345"
+      },
+      {
+        "name": "Blockchain Conference",
+        "date": "12th - 14th March 2023",
+        "description": "Blockchain Conference gathers blockchain enthusiasts to discuss the impact of blockchain technology on various industries. Experts will share insights on decentralized applications, smart contracts, and the future of blockchain.",
+        "image": "https://source.unsplash.com/random?i=43534"
+      },
+      {
+        "name": "Tech Entrepreneurship Forum",
+        "date": "27th - 26th March 2023",
+        "description": "The Tech Entrepreneurship Forum is for aspiring tech entrepreneurs. It provides a platform to learn from successful startups, gain insights into the tech industry, and network with potential investors.",
+        "image": "https://source.unsplash.com/random?i=5234234"
+      },
+      {
+        "name": "Cloud Computing Meetup",
+        "date": "22th - 26th November 2023",
+        "description": "Cloud Computing Meetup is an event for cloud computing professionals and enthusiasts. It offers sessions on cloud architecture, services, and the future of cloud technology.",
+        "image": "https://source.unsplash.com/random?i=6234234"
+      },
+      {
+        "name": "CyberSecurity Summit",
+        "date": "23th - 26th February 2023",
+        "description": "The CyberSecurity Summit focuses on the latest developments in cybersecurity. Attendees will learn from top security experts about emerging threats, best practices for protection, and the future of digital security.",
+        "image": "https://source.unsplash.com/random?i=7236325"
+      },
+      {
+        "name": "IoT Innovation Summit",
+        "date": "15th - 12th April 2023",
+        "description": "The IoT Innovation Summit explores the latest in Internet of Things technology. Participants will learn about new IoT devices, applications, and the impact of IoT on daily life and industry.",
+        "image": "https://source.unsplash.com/random?i=8234634"
+      }
+    ]
   },
   "EEE": {
     "name": "Electrical and Electronics Engineering",
@@ -63,7 +776,218 @@
       "percentage": 115.38,
       "placedStudents": 39,
       "totalOffers": 45
-    }
+    },
+    "facultyInfo": {
+      "image": "/src/assets/images/image_5.png",
+      "facultyList": [
+        {
+          "Name": "Tapas Tewary",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 6 mts"
+        },
+        {
+          "Name": "Nayan Ranjan Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Sirshendu Saha",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "14 yrs 10 mts"
+        },
+        {
+          "Name": "Subir Panja",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Poulomi Ganguly",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "K.M.Priti",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MCA",
+          "Experience": "3 yrs"
+        },
+        {
+          "Name": "Shaoli Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MBA",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Nibedita Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Niloy Ghosh",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "7 yrs 5 mts"
+        },
+        {
+          "Name": "Dhrubajyoti Mondal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yrs 2 mts"
+        },
+        {
+          "Name": "Debjani Bhattacharya",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
+        },
+        {
+          "Name": "Subhasish Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yrs 3 mts"
+        },
+        {
+          "Name": "Sayan Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Uday Kumar Mandal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "14 yrs 7 mts"
+        },
+        {
+          "Name": "Soment Kumar Hati",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "20 yrs 6 mts"
+        },
+        {
+          "Name": "Abhijit Mallick",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "20 yrs 5 mts"
+        },
+        {
+          "Name": "Pinak Pani Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs"
+        },
+        {
+          "Name": "Sanjib Kundu",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "11 yrs 6 mts"
+        },
+        {
+          "Name": "Rakhi Neogi",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "11 yrs 7 mts"
+        },
+        {
+          "Name": "Suchibrata Dutta",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "13 yrs 2 mts"
+        },
+        {
+          "Name": "Shamik Kumar Bose",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "13 yrs"
+        },
+        {
+          "Name": "Abhinaba Dutta",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "15 yrs 6 mts"
+        },
+        {
+          "Name": "Nabanita Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "5 yrs"
+        },
+        {
+          "Name": "Anindya Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.B.A",
+          "Experience": "19 yrs 1 mts"
+        },
+        {
+          "Name": "Kanishka Majumder",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Dwijen Biswas",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MBA",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Ramnayan Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "7 yrs"
+        },
+        {
+          "Name": "Abhijit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.E",
+          "Experience": "13 yrs 4 mts"
+        },
+        {
+          "Name": "Tanmay Makar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        },
+        {
+          "Name": "Sandip Saha Chowdhury",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "20 yrs 9 mts"
+        },
+        {
+          "Name": "Sajal Sasmal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "4 yrs"
+        },
+        {
+          "Name": "Manish Sharma",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "3 yrs"
+        }
+      ]
+    },
+    "events": [
+      {
+        "name": "Power Systems Conference",
+        "date": "8th - 10th March 2023",
+        "description": "The Power Systems Conference focuses on the latest advancements in power generation, distribution, and storage. Attendees will learn about smart grids, renewable energy sources, and innovations in power technology.",
+        "image": "https://source.unsplash.com/random?i=49285"
+      },
+      {
+        "name": "Electronics and Embedded Systems Workshop",
+        "date": "12th - 14th April 2023",
+        "description": "This workshop is dedicated to electronics and embedded systems. Participants will engage in hands-on sessions and lectures on microcontrollers, circuit design, and the latest trends in embedded systems.",
+        "image": "https://source.unsplash.com/random?i=31746"
+      }
+    ]
   },
   "MCA": {
     "name": "Master of Computer Applications",
@@ -71,10 +995,137 @@
     "about": "Embark on a journey of innovation and creativity with Mechanical Engineering at A.O.T. Our department is a hub of hands-on learning, where students design, build, and test cutting-edge solutions to real-world challenges. With a focus on sustainability and efficiency, we empower minds to engineer a better tomorrow.",
     "placementStatistics": {
       "year": 2023,
-      "percentage": 106.30,
-      "placedStudents": 16,
-      "totalOffers": 17
-    }
+      "percentage": 212.31,
+      "placedStudents": 130,
+      "totalOffers": 276
+    },
+    "facultyInfo": {
+      "image": "/src/assets/images/image_5.png",
+      "facultyList": [
+        {
+          "Name": "Sajal Sasmal",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "4 yrs"
+        },
+        {
+          "Name": "Suman Bhattacharya",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Soumendu Banerjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "4 yrs"
+        },
+        {
+          "Name": "Debasish Sur",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Nibedita Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "8 yrs 7 mts"
+        },
+        {
+          "Name": "Niloy Ghosh",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "7 yrs 5 mts"
+        },
+        {
+          "Name": "Subham Pramanik",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "12 yrs 7 mts"
+        },
+        {
+          "Name": "Jayjeet Sarkar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "14 yrs"
+        },
+        {
+          "Name": "Subir Panja",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Supantha Das",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "9 yrs 7 mts"
+        },
+        {
+          "Name": "Jayanta Digar",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yr"
+        },
+        {
+          "Name": "Abhijit Mallick",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "20 yrs 5 mts"
+        },
+        {
+          "Name": "Anshupriya Shome",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Arun Kumar Sadhu",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "6 yrs"
+        },
+        {
+          "Name": "Soumya Chatterjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Biswajit Patra",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "1 yrs 3 mts"
+        },
+        {
+          "Name": "Anil Kumar Sharma",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MBA",
+          "Experience": "11 yrs"
+        },
+        {
+          "Name": "Dipanwita Saha",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "2 yrs"
+        }
+      ]
+    },
+    "events": [
+      {
+        "name": "Software Development Workshop",
+        "date": "15th - 17th May 2023",
+        "description": "The Software Development Workshop focuses on the latest software development practices and tools. Participants will engage in hands-on sessions covering agile methodologies, version control, and modern development frameworks.",
+        "image": "https://source.unsplash.com/random?i=52637"
+      },
+      {
+        "name": "Data Analytics Symposium",
+        "date": "20th - 22nd June 2023",
+        "description": "The Data Analytics Symposium brings together experts in data science and analytics to share insights on big data, machine learning, and data visualization. Attendees will learn about the latest tools and techniques in data analysis.",
+        "image": "https://source.unsplash.com/random?i=87345"
+      }
+    ]
   },
   "MBA": {
     "name": "Master of Business Administration",
@@ -85,6 +1136,43 @@
       "percentage": 212.31,
       "placedStudents": 130,
       "totalOffers": 276
-    }
+    },
+    "facultyInfo": {
+      "image": "/src/assets/images/image_5.png",
+      "facultyList": [
+        {
+          "Name": "Anshupriya Shome",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Subir Panja",
+          "Designation": "Associate Professor",
+          "Highest Qualification": "Ph.D",
+          "Experience": "13 yrs 7 mts"
+        },
+        {
+          "Name": "Shaoli Mukherjee",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "MBA",
+          "Experience": "2 yrs 1 mts"
+        },
+        {
+          "Name": "Niloy Ghosh",
+          "Designation": "Assistant Professor",
+          "Highest Qualification": "M.Tech",
+          "Experience": "7 yrs 5 mts"
+        }
+      ]
+    },
+    "events": [
+      {
+        "name": "Business Conclave",
+        "date": "15th - 17th March 2023",
+        "description": "Join us for an insightful session where industry leaders discuss the latest trends and challenges in the business world.",
+        "image": "https://source.unsplash.com/random?i=12345"
+      }
+    ]
   }
 }
