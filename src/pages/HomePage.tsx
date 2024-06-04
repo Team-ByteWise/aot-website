@@ -3,10 +3,9 @@ import { PaletteMode } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Theme, ThemeProvider } from "@mui/material/styles";
 import TopAppBar from "../components/TopAppBar/TopAppBar";
 import Hero from "../components/Hero/Hero";
-import getTheme from "../Theme";
 import { useEffect } from "react";
 import Footer from "../components/Footer/Footer";
 import NavBarItems from "../data/NavBarItems";
@@ -15,23 +14,13 @@ import {
   useOverlayScrollbars,
 } from "overlayscrollbars-react";
 
-export default function HomePage() {
-  let currentTheme = localStorage.getItem("theme");
-  if (!currentTheme) currentTheme = "light";
+interface HomePageProps {
+  mode: PaletteMode;
+  theme: Theme;
+  toggleColorMode: () => void;
+}
 
-  const [mode, setMode] = React.useState<PaletteMode>(
-    currentTheme as "dark" | "light"
-  );
-  const Theme = createTheme(getTheme(mode));
-
-  const toggleColorMode = () => {
-    setMode((prev) => (prev === "dark" ? "light" : "dark"));
-  };
-
-  useEffect(() => {
-    localStorage.setItem("theme", mode);
-  }, [mode]);
-
+export default function HomePage({ mode, theme, toggleColorMode }: HomePageProps) {
   const ref = React.createRef<HTMLDivElement>();
 
   const [initBodyOverlayScrollbars] = useOverlayScrollbars({
@@ -48,7 +37,7 @@ export default function HomePage() {
   }, [initBodyOverlayScrollbars, ref]);
 
   return (
-    <ThemeProvider theme={Theme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <TopAppBar
         mode={mode}

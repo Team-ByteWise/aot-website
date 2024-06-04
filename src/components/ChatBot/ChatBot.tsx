@@ -1,3 +1,5 @@
+import { PaletteMode } from "@mui/material";
+import React from "react";
 import { useEffect } from "react";
 
 declare global {
@@ -8,34 +10,61 @@ declare global {
 
 type BotpressWebChatType = {
   init: (config: BotpressWebChatConfig) => void;
+  mergeConfig: (config: BotpressWebChatConfig) => void;
 };
 
 type BotpressWebChatConfig = {
-  composerPlaceholder: string;
-  botConversationDescription: string;
-  botId: string;
-  hostUrl: string;
-  messagingUrl: string;
-  clientId: string;
-  webhookId: string;
-  lazySocket: boolean;
-  themeName: string;
-  botName: string;
-  avatarUrl: string;
-  stylesheet: string;
-  frontendVersion: string;
-  theme: string;
-  themeColor: string;
-  allowedOrigins: string[];
+  composerPlaceholder?: string;
+  botConversationDescription?: string;
+  botId?: string;
+  hostUrl?: string;
+  messagingUrl?: string;
+  clientId?: string;
+  webhookId?: string;
+  lazySocket?: boolean;
+  themeName?: string;
+  botName?: string;
+  avatarUrl?: string;
+  stylesheet?: string;
+  frontendVersion?: string;
+  theme?: string;
+  themeColor?: string;
+  allowedOrigins?: string[];
 };
 
-const ChatBot = () => {
+interface ChatBotProps {
+  mode: PaletteMode;
+}
+
+const ChatBot = ({ mode }: ChatBotProps) => {
+  const [scriptLoaded, setScriptLoaded] = React.useState(false);
+
+  useEffect(() => {
+    if (scriptLoaded) {
+      window.botpressWebChat.mergeConfig({
+        themeName: "prism",
+        botName: "AOTAssist",
+        avatarUrl:
+          mode === "dark"
+            ? "https://i.ibb.co/ZGQg4k6/image.png"
+            : "https://i.ibb.co/6JMFYkV/icon-192.png",
+        stylesheet:
+          mode === "dark"
+            ? "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v61669/style.css"
+            : "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v97356/style.css",
+        frontendVersion: "v1",
+        theme: "prism",
+        themeColor: mode === "dark" ? "#064079" : "#0A66C2",
+        allowedOrigins: [],
+      });
+    }
+  }, [scriptLoaded, mode]);
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://cdn.botpress.cloud/webchat/v1/inject.js";
     script.async = true;
     document.body.appendChild(script);
-
     script.onload = () => {
       window.botpressWebChat.init({
         composerPlaceholder: "Ask AOTAssist.....",
@@ -49,15 +78,21 @@ const ChatBot = () => {
         themeName: "prism",
         botName: "AOTAssist",
         avatarUrl:
-          "https://static.vecteezy.com/system/resources/thumbnails/021/640/011/small/3d-chatbot-icon-isolated-on-white-background-3d-artificial-intelligence-business-and-technology-concept-cartoon-minimal-style-3d-online-support-icon-render-illustration-vector.jpg",
+          mode === "dark"
+            ? "https://i.ibb.co/ZGQg4k6/image.png"
+            : "https://i.ibb.co/6JMFYkV/icon-192.png",
         stylesheet:
-          "https://webchat-styler-css.botpress.app/prod/5ebd1b43-27c7-4b89-9892-5600afe6609c/v47157/style.css",
+          mode === "dark"
+            ? "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v61669/style.css"
+            : "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v97356/style.css",
         frontendVersion: "v1",
         theme: "prism",
-        themeColor: "#2563eb",
+        themeColor: mode === "dark" ? "#064079" : "#0A66C2",
         allowedOrigins: [],
       });
+      setScriptLoaded(true);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <div id="webchat" />;
