@@ -50,8 +50,8 @@ const ChatBot = ({ mode }: ChatBotProps) => {
             : "https://i.ibb.co/6JMFYkV/icon-192.png",
         stylesheet:
           mode === "dark"
-            ? "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v61669/style.css"
-            : "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v97356/style.css",
+            ? "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v48044/style.css"
+            : "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v64149/style.css",
         frontendVersion: "v1",
         theme: "prism",
         themeColor: mode === "dark" ? "#064079" : "#0A66C2",
@@ -83,8 +83,8 @@ const ChatBot = ({ mode }: ChatBotProps) => {
             : "https://i.ibb.co/6JMFYkV/icon-192.png",
         stylesheet:
           mode === "dark"
-            ? "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v61669/style.css"
-            : "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v97356/style.css",
+            ? "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v48044/style.css"
+            : "https://webchat-styler-css.botpress.app/prod/code/cd6d1743-a820-411e-a323-66e621e871c1/v64149/style.css",
         frontendVersion: "v1",
         theme: "prism",
         themeColor: mode === "dark" ? "#064079" : "#0A66C2",
