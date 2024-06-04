@@ -1,22 +1,22 @@
 [
     {
-      "title": "Event #1",
+      "title": "TechFiesta'24",
+      "link": "https://aotfiesta24.tech/"
+    },
+    {
+      "title": "Games Meet'24",
+      "link": "https://aotfiesta24.tech/gamesmeet"
+    },
+    {
+      "title": "Workshops",
+      "link": "https://aotfiesta24.tech/workshop"
+    },
+    {
+      "title": "Arcadia'23",
       "link": "#"
     },
     {
-      "title": "Event #2",
-      "link": "#"
-    },
-    {
-      "title": "Event #3",
-      "link": "#"
-    },
-    {
-      "title": "Event #4",
-      "link": "#"
-    },
-    {
-      "title": "Event #5",
+      "title": "AoT Hackathon'23",
       "link": "#"
     }
   ]
