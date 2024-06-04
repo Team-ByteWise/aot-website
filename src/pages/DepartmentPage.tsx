@@ -9,9 +9,8 @@ import {
   Toolbar,
 } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Theme, ThemeProvider } from "@mui/material/styles";
 import TopAppBar from "../components/TopAppBar/TopAppBar";
-import getTheme from "../Theme";
 import { useEffect } from "react";
 import Footer from "../components/Footer/Footer";
 import { useNavigate, useParams } from "react-router-dom";
@@ -24,22 +23,15 @@ import { useOverlayScrollbars } from "overlayscrollbars-react";
 
 const subNavBarItems = ["About", "Faculty", "Events"];
 
-export default function DepartmentPage() {
-  let currentTheme = localStorage.getItem("theme");
-  if (!currentTheme) currentTheme = "light";
+interface DepartmentPageProps {
+  mode: PaletteMode;
+  theme: Theme;
+  toggleColorMode: () => void;
+}
 
-  const [selectedButton, setSelectedButton] = useState<string>();
-
-  const [mode, setMode] = React.useState<PaletteMode>(
-    currentTheme as "dark" | "light"
-  );
-  const Theme = createTheme(getTheme(mode));
-
-  const toggleColorMode = () => {
-    setMode((prev) => (prev === "dark" ? "light" : "dark"));
-  };
-
+export default function DepartmentPage({mode, theme, toggleColorMode}: DepartmentPageProps) {
   const ref = React.createRef<HTMLDivElement>();
+  const [selectedButton, setSelectedButton] = useState<string>();
 
   const [initBodyOverlayScrollbars] = useOverlayScrollbars({
     defer: true,
@@ -73,7 +65,7 @@ export default function DepartmentPage() {
   }
 
   return (
-    <ThemeProvider theme={Theme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <TopAppBar
         mode={mode}

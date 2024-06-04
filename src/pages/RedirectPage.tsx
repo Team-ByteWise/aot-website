@@ -1,15 +1,14 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useEffect } from "react";
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import getTheme from "../Theme";
+import { CssBaseline, Theme, ThemeProvider } from "@mui/material";
 
-function RedirectPage({ to }: { to: string }) {
-  let currentTheme = localStorage.getItem("theme");
-  if (!currentTheme) currentTheme = "dark";
+interface RedirectPageProps {
+  to: string;
+  theme: Theme;
+}
 
-  const theme = createTheme(getTheme(currentTheme as "dark" | "light"));
-
+function RedirectPage({ to, theme }: RedirectPageProps) {
   useEffect(() => {
     location.replace(to);
   }, [to]);
