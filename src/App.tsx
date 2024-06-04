@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import FacultyListPage from "./pages/FacultyListPage";
 import "overlayscrollbars/overlayscrollbars.css";
+import ChatBot from "./components/ChatBot/ChatBot";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <ChatBot />
       <Analytics />
       <SpeedInsights />
     </>
