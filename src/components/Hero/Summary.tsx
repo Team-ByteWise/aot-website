@@ -52,13 +52,13 @@ const Summary = ({ mode }: SummaryProps) => {
         }}
       >
         <Stack
-          direction={{ xs: "column", sm: "row" }}
+          direction={{ xs: "column", sm: "column", md: "row", lg: "row" }}
           alignItems="center"
           justifyContent="space-between"
           sx={{
-            px: { xs: 2, sm: 5, md: 10 },
+            px: { xs: 2, md: 4, lg: 10 },
           }}
-          spacing={{ xs: 2, sm: 5, md: 10 }}
+          spacing={2}
         >
           {heroData.map((item, index) => (
             <Stack key={index} direction="row" spacing={2} alignItems="center">
@@ -67,9 +67,9 @@ const Summary = ({ mode }: SummaryProps) => {
                 appendText={item.appendText}
                 fontWeight={"bold"}
                 fontSize={{
-                  xs: "1.2rem",
-                  sm: "1.5rem",
-                  md: "2.5rem",
+                  xs: "1.0rem",
+                  sm: "1.2rem",
+                  md: "2.0rem",
                   lg: "3rem",
                 }}
                 animationDuration={1000}
@@ -80,9 +80,9 @@ const Summary = ({ mode }: SummaryProps) => {
                 fontWeight={"bold"}
                 fontSize={{
                   xs: "0.8rem",
-                  sm: "1rem",
-                  md: "1.2rem",
-                  lg: "1.5rem",
+                  sm: "0.8rem",
+                  md: "0.8rem",
+                  lg: "1.0rem",
                 }}
                 sx={{
                   textTransform: "uppercase",

@@ -18,7 +18,7 @@ export interface SlideImage {
 const ElevatedButton = styled(Button)({
   backgroundColor: "rgba(255, 255, 255, 0.3)",
   borderRadius: "8px",
-  boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
+  boxShadow: "0px 0.5em 0.5em rgba(0, 0, 0, 0.2)",
   "&:hover": {
     backgroundColor: "rgba(255, 255, 255, 0.6)",
   },
@@ -168,7 +168,7 @@ const Carousel = ({
               style={{ ...floatingStyle, top: "20%" }}
               color={"primary.dark"}
               fontWeight={"bold"}
-              fontSize={{ xs: "0.8rem", sm: "1.0rem", md: "2rem", lg: "2rem" }}
+              fontSize={{ xs: "0.8rem", sm: "1.0rem", md: "1.5rem", lg: "1.5rem" }}
               maxWidth={{ sm: "50%", md: "40%", lg: "30%" }}
               variant="h5"
               component="h2"
@@ -183,10 +183,10 @@ const Carousel = ({
               sx={{
                 p: { xs: 1, sm: 1, md: 1, lg: 3 },
                 fontSize: {
-                  xs: "0.8rem",
-                  sm: "1.0rem",
-                  md: "1.5rem",
-                  lg: "1.5rem",
+                  xs: "0.7rem",
+                  sm: "0.8rem",
+                  md: "1.0rem",
+                  lg: "1.2rem",
                 },
               }}
               onClick={(event) => {
