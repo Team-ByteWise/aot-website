@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { Event } from "../../data/Event";
 import CustomCard from "../CustomCard/CustomCard";
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, PaletteMode, Typography } from "@mui/material";
+import React from "react";
+import { useOverlayScrollbars } from "overlayscrollbars-react";
 
 interface EventCardProps {
   event: Event;
+  mode: PaletteMode;
 }
 
-const EventCard = ({ event }: EventCardProps) => {
+const EventCard = ({ event, mode }: EventCardProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const handleImageLoad = () => {
@@ -24,6 +27,21 @@ const EventCard = ({ event }: EventCardProps) => {
     setImageLoaded(false);
   }, [event]);
 
+  const ref = React.createRef<HTMLDivElement>();
+
+  const [initBodyOverlayScrollbars] = useOverlayScrollbars({
+    defer: true,
+    options: {
+      scrollbars: {
+        theme: mode === "dark" ? "os-theme-light" : "os-theme-dark",
+      },
+    },
+  });
+
+  useEffect(() => {
+    initBodyOverlayScrollbars(ref.current!);
+  }, [initBodyOverlayScrollbars, ref]);
+  
   return (
     <>
       <CustomCard>
@@ -48,7 +66,7 @@ const EventCard = ({ event }: EventCardProps) => {
             onLoad={handleImageLoad}
             onError={handleImageError}
           />
-          <CardContent sx={{ overflow: "auto", scrollbarWidth: "none" }}>
+          <CardContent ref={ref} sx={{ overflow: "auto", scrollbarWidth: "none" }}>
             <Typography gutterBottom variant="h5" component="div">
               {event.name}
             </Typography>

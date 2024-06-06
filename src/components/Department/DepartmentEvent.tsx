@@ -1,12 +1,13 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, PaletteMode, Typography } from "@mui/material";
 import EventCard from "../EventCard/EventCard";
 import { Department } from "../../data/Departments";
 
 interface DepartmentEventProps {
   department: Department;
+  mode: PaletteMode;
 }
 
-const DepartmentEvent = ({ department }: DepartmentEventProps) => {
+const DepartmentEvent = ({ department, mode }: DepartmentEventProps) => {
   const gridItemSx = {
     display: "flex",
     flexDirection: "column",
@@ -53,7 +54,7 @@ const DepartmentEvent = ({ department }: DepartmentEventProps) => {
             width={{ xs: "100%", sm: "100%", md: "35%" }}
             sx={gridItemSx}
           >
-            <EventCard event={event} />
+            <EventCard key={event.name} mode={mode} event={event} />
           </Grid>
         ))}
       </Grid>

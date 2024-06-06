@@ -29,7 +29,11 @@ interface DepartmentPageProps {
   toggleColorMode: () => void;
 }
 
-export default function DepartmentPage({mode, theme, toggleColorMode}: DepartmentPageProps) {
+export default function DepartmentPage({
+  mode,
+  theme,
+  toggleColorMode,
+}: DepartmentPageProps) {
   const ref = React.createRef<HTMLDivElement>();
   const [selectedButton, setSelectedButton] = useState<string>();
 
@@ -106,6 +110,7 @@ export default function DepartmentPage({mode, theme, toggleColorMode}: Departmen
               >
                 {subNavBarItems.map((item) => (
                   <Button
+                    key={item}
                     variant="outlined"
                     onClick={() => {
                       setSelectedButton(item);
@@ -131,7 +136,7 @@ export default function DepartmentPage({mode, theme, toggleColorMode}: Departmen
               <DepartmentFaculty department={departments[dept]} />
             )}
             {selectedButton === "Events" && (
-              <DepartmentEvent department={departments[dept]} />
+              <DepartmentEvent mode={mode} department={departments[dept]} />
             )}
           </Box>
         </Container>
