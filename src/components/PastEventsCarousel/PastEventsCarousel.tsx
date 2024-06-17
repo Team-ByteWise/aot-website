@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { PastEvent } from "../../data/PastEvent";
+import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
 const timeInterval = 2000;
 
@@ -25,6 +26,7 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [lastUserClick, setLastUserClick] = useState(Date.now());
   const [isHovered, setIsHovered] = useState(false);
+  const [loadingArray, setLoadingArray] = useState([true, true, true]);
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -33,19 +35,32 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
   };
 
   const handleNext = () => {
+    resetLoadingArray();
     setCurrentIndex((prevIndex) =>
       prevIndex === pastEvents.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   useEffect(() => {
-    if (isHovered) return;
+    if (isHovered || loadingArray.some((loading) => loading)) return;
     const interval = setInterval(() => {
       if (Date.now() > lastUserClick + timeInterval) handleNext();
     }, timeInterval);
     return () => clearInterval(interval);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lastUserClick, isHovered]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lastUserClick, isHovered, loadingArray]);
+
+  const handleLoadingChange = (index: number, isLoading: boolean) => {
+    setLoadingArray((prevArray) => {
+      const newArray = [...prevArray];
+      newArray[index] = isLoading;
+      return newArray;
+    });
+  };
+
+  const resetLoadingArray = () => {
+    setLoadingArray([true, true, true]);
+  }
 
   const visiblePastEvents = isMobile
     ? [pastEvents[currentIndex]]
@@ -59,13 +74,12 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
     return visiblePastEvents.map((pastEvent, index) => (
       <Grid
         item
-        key={index}
+        key={`${pastEvent.image}-${currentIndex}-${index}`}
         sx={{ position: "relative", overflow: "hidden", borderRadius: "10px" }}
       >
-        <Box
-          component="img"
+        <ProgressiveImage
           src={pastEvent.image}
-          alt={`Photo ${pastEvent}`}
+          alt={pastEvent.title}
           sx={{
             width: isMobile
               ? "100%"
@@ -86,6 +100,7 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
             objectFit: "cover",
             borderRadius: "10px",
           }}
+          onLoadingChange={(isLoading) => handleLoadingChange(index, isLoading)}
         />
         <Box
           onMouseEnter={() => setIsHovered(true)}
@@ -124,7 +139,10 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
           }}
         >
           <Typography variant="h6">{pastEvent.title}</Typography>
-          <Typography variant="body2" color={mode == 'dark' ? "text.secondary" : "text.semiSecondary"}>
+          <Typography
+            variant="body2"
+            color={mode == "dark" ? "text.secondary" : "text.semiSecondary"}
+          >
             {pastEvent.date}
           </Typography>
         </Box>
