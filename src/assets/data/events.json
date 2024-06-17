@@ -1,23 +1,22 @@
 [
-    {
-      "title": "TechFiesta'24",
-      "link": "https://aotfiesta24.tech/"
-    },
-    {
-      "title": "Games Meet'24",
-      "link": "https://aotfiesta24.tech/gamesmeet"
-    },
-    {
-      "title": "Workshops",
-      "link": "https://aotfiesta24.tech/workshop"
-    },
-    {
-      "title": "Arcadia'23",
-      "link": "#"
-    },
-    {
-      "title": "AoT Hackathon'23",
-      "link": "#"
-    }
-  ]
-  
+  {
+    "title": "TechFiesta'24",
+    "link": "https://aotfiesta24.tech/"
+  },
+  {
+    "title": "Games Meet'24",
+    "link": "https://aotfiesta24.tech/gamesmeet"
+  },
+  {
+    "title": "Workshops",
+    "link": "https://aotfiesta24.tech/workshop"
+  },
+  {
+    "title": "Arcadia'24",
+    "link": "#"
+  },
+  {
+    "title": "AOT Hackathon'24",
+    "link": "#"
+  }
+]
