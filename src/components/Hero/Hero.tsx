@@ -13,6 +13,8 @@ import eventsArray from "../../assets/data/events.json";
 import { Link } from "@mui/material";
 import Carousel, { SlideImage } from "../Carousel/Carousel";
 import Summary from "./Summary";
+import PastEventsCarousel from "../PastEventsCarousel/PastEventsCarousel";
+import pastEventsArray from "../../data/PastEvent";
 
 interface HeroProps {
   mode: PaletteMode;
@@ -205,7 +207,7 @@ export default function Hero({ mode }: HeroProps) {
                   marginBottom={"20px"}
                   sx={{ fontSize: { xs: 25, sm: 40 } }}
                 >
-                  Events
+                  Upcoming Events
                 </Typography>
 
                 {eventsArray.map((item, index) => {
@@ -239,6 +241,26 @@ export default function Hero({ mode }: HeroProps) {
           }}
         >
           <Summary mode={mode} />
+        </Container>
+
+        <Container
+          maxWidth={false}
+          sx={{
+            mt: { xs: 8, sm: 10 },
+          }}
+          style={{
+            overflow: "hidden",
+          }}
+        >
+          <Typography
+            textAlign="center"
+            variant="h4"
+            marginBottom={"20px"}
+            sx={{ fontSize: { xs: 25, sm: 40 } }}
+          >
+            Past Events
+          </Typography>
+          <PastEventsCarousel mode={mode} pastEvents={pastEventsArray} />
         </Container>
       </Container>
     </Box>
