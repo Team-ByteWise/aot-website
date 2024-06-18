@@ -38,7 +38,7 @@ const ProgressiveImage = ({
         onLoad={handleLoad}
         onError={handleLoad}
         sx={sx}
-        style={{ display: loading ? "none" : "block" }}
+        style={{ display: loading ? "block" : "block" }}
       />
     </Box>
   );
