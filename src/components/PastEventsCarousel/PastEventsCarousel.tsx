@@ -26,7 +26,9 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [lastUserClick, setLastUserClick] = useState(Date.now());
   const [isHovered, setIsHovered] = useState(false);
-  const [loadingArray, setLoadingArray] = useState([true, true, true]);
+  const [loadingArray, setLoadingArray] = useState(
+    isMobile ? [true] : [true, true, true]
+  );
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -59,7 +61,7 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
   };
 
   const resetLoadingArray = () => {
-    setLoadingArray([true, true, true]);
+    setLoadingArray(isMobile ? [true] : [true, true, true]);
   };
 
   const visiblePastEvents = isMobile
