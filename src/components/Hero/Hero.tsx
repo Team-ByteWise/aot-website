@@ -1,4 +1,4 @@
-import { Grid, Theme, alpha, useMediaQuery } from "@mui/material";
+import { Grid, PaletteMode, Theme, alpha, useMediaQuery } from "@mui/material";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -12,8 +12,15 @@ import announcementsArray from "../../assets/data/announcements.json";
 import eventsArray from "../../assets/data/events.json";
 import { Link } from "@mui/material";
 import Carousel, { SlideImage } from "../Carousel/Carousel";
+import Summary from "./Summary";
+import PastEventsCarousel from "../PastEventsCarousel/PastEventsCarousel";
+import pastEventsArray from "../../data/PastEvent";
 
-export default function Hero() {
+interface HeroProps {
+  mode: PaletteMode;
+}
+
+export default function Hero({ mode }: HeroProps) {
   const gridStyle = (theme: Theme) => ({
     alignSelf: "center",
     backgroundImage:
@@ -96,7 +103,13 @@ export default function Hero() {
           <Carousel
             slideImages={slideImages}
             sx={{
-              height: isXs ? "100px" : isSm ? "200px" : isMd ? "300px" : "400px",
+              height: isXs
+                ? "100px"
+                : isSm
+                ? "200px"
+                : isMd
+                ? "300px"
+                : "400px",
               borderRadius: "20px",
             }}
           />
@@ -194,7 +207,7 @@ export default function Hero() {
                   marginBottom={"20px"}
                   sx={{ fontSize: { xs: 25, sm: 40 } }}
                 >
-                  Events
+                  Upcoming Events
                 </Typography>
 
                 {eventsArray.map((item, index) => {
@@ -216,6 +229,38 @@ export default function Hero() {
               </Container>
             </Grid>
           </Grid>
+        </Container>
+
+        <Container
+          maxWidth={false}
+          sx={{
+            mt: { xs: 8, sm: 10 },
+          }}
+          style={{
+            overflow: "hidden",
+          }}
+        >
+          <Summary mode={mode} />
+        </Container>
+
+        <Container
+          maxWidth={false}
+          sx={{
+            mt: { xs: 8, sm: 10 },
+          }}
+          style={{
+            overflow: "hidden",
+          }}
+        >
+          <Typography
+            textAlign="center"
+            variant="h4"
+            marginBottom={"20px"}
+            sx={{ fontSize: { xs: 25, sm: 40 } }}
+          >
+            Past Events
+          </Typography>
+          <PastEventsCarousel mode={mode} pastEvents={pastEventsArray} />
         </Container>
       </Container>
     </Box>

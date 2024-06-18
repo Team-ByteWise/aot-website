@@ -56,7 +56,7 @@ export default function HomePage({ mode, theme, toggleColorMode }: HomePageProps
         defer
       >
         <div style={{ height: "100vh" }} ref={ref}>
-          <Hero />
+          <Hero mode={mode} />
           <Box sx={{ bgcolor: "background.default" }}>
             <Divider />
           </Box>
