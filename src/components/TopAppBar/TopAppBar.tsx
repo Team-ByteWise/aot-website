@@ -75,9 +75,15 @@ interface TopAppBarProps {
   mode: PaletteMode;
   toggleColorMode: () => void;
   navBarItems: NestedRecord;
+  enableHomeButton?: boolean;
 }
 
-function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
+function TopAppBar({
+  mode,
+  toggleColorMode,
+  navBarItems,
+  enableHomeButton = false,
+}: TopAppBarProps) {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
@@ -276,6 +282,20 @@ function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
                       inputProps={{ "aria-label": "search" }}
                     />
                   </Search>
+                  {enableHomeButton && (
+                    <MenuItem
+                      key="NavBar-Home"
+                      onClick={(event) => {
+                        event.preventDefault();
+                        navigate("/");
+                      }}
+                      sx={{ py: "6px", px: "12px" }}
+                    >
+                      <Typography variant="body2" color="text.primary">
+                        Home
+                      </Typography>
+                    </MenuItem>
+                  )}
                   {parseNavBarItems(navBarItems, "sm")}
                 </Box>
               </Drawer>
@@ -300,6 +320,20 @@ function TopAppBar({ mode, toggleColorMode, navBarItems }: TopAppBarProps) {
               }}
             >
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                {enableHomeButton && (
+                  <MenuItem
+                    key="NavBar-Home"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      navigate("/");
+                    }}
+                    sx={{ py: "6px", px: "12px" }}
+                  >
+                    <Typography variant="body2" color="text.primary">
+                      Home
+                    </Typography>
+                  </MenuItem>
+                )}
                 {parseNavBarItems(navBarItems, "md")}
               </Box>
             </Box>

@@ -75,6 +75,7 @@ export default function DepartmentPage({
         mode={mode}
         toggleColorMode={toggleColorMode}
         navBarItems={NavBarItems}
+        enableHomeButton={true}
       />
       <div style={{ height: "100vh" }} ref={ref}>
         <Container
