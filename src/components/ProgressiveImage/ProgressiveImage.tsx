@@ -17,8 +17,7 @@ const ProgressiveImage = ({
 }: ProgressiveImageProps) => {
   const [loading, setLoading] = useState(true);
 
-  const handleLoad = (src: string) => {
-    console.log(src);
+  const handleLoad = () => {
     setLoading(false);
     onLoadingChange?.(false);
   };
@@ -36,8 +35,8 @@ const ProgressiveImage = ({
         component="img"
         src={src}
         alt={alt}
-        onLoad={ () => handleLoad(src)}
-        onError={ () => handleLoad(src)}
+        onLoad={handleLoad}
+        onError={handleLoad}
         sx={sx}
         style={{ display: loading ? "none" : "block" }}
       />
