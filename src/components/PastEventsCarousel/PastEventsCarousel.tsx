@@ -60,7 +60,7 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
 
   const resetLoadingArray = () => {
     setLoadingArray([true, true, true]);
-  }
+  };
 
   const visiblePastEvents = isMobile
     ? [pastEvents[currentIndex]]
@@ -106,9 +106,9 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           sx={{
-            position: "absolute",
             top: 0,
             left: 0,
+            position: "absolute",
             width: isMobile
               ? "100%"
               : {
@@ -123,6 +123,8 @@ const PastEventsCarousel = ({ mode, pastEvents }: PhotoCarouselProps) => {
                   xl: index === 1 ? "300px" : "225px",
                   xxl: index === 1 ? "350px" : "250px",
                 },
+            aspectRatio: "4/3",
+            objectFit: "cover",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             opacity: 0,
             transition: "opacity 0.3s ease-in-out",
