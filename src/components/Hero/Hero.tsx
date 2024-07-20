@@ -53,7 +53,7 @@ export default function Hero({ mode }: HeroProps) {
       alt: "Image 2",
       text: "“Engineering is the VISA to Innovation”",
       buttonText: "Take Website Tour",
-      link: "/about",
+      link: "https://youtu.be/EYA-slrp_-M?si=EZ3-zu1Zdmt-kgUw",
     },
     {
       image: image3,

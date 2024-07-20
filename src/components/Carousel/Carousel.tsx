@@ -2,7 +2,13 @@ import React, { CSSProperties } from "react";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Typography, Button, styled, useMediaQuery, Theme } from "@mui/material";
+import {
+  Typography,
+  Button,
+  styled,
+  useMediaQuery,
+  Theme,
+} from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useNavigate } from "react-router-dom";
@@ -63,7 +69,7 @@ const Carousel = ({
 }) => {
   const isXs = useMediaQuery((theme: Theme) => theme.breakpoints.down("xs"));
   const isSm = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
-  
+
   const settings: Settings = {
     dots: true,
     appendDots: (dots: React.ReactNode) => (
@@ -168,7 +174,12 @@ const Carousel = ({
               style={{ ...floatingStyle, top: "20%" }}
               color={"primary.dark"}
               fontWeight={"bold"}
-              fontSize={{ xs: "0.8rem", sm: "1.0rem", md: "1.5rem", lg: "1.5rem" }}
+              fontSize={{
+                xs: "0.8rem",
+                sm: "1.0rem",
+                md: "1.5rem",
+                lg: "1.5rem",
+              }}
               maxWidth={{ sm: "50%", md: "40%", lg: "30%" }}
               variant="h5"
               component="h2"
@@ -191,7 +202,11 @@ const Carousel = ({
               }}
               onClick={(event) => {
                 event.preventDefault();
-                navigate(slideImage.link);
+                if (slideImage.link.startsWith("http")) {
+                  window.location.href = slideImage.link;
+                } else {
+                  navigate(slideImage.link);
+                }
               }}
             >
               {slideImage.buttonText}
